@@ -1,0 +1,40 @@
+{
+  "name": "tew-indicators",
+  "version": "1.0.0",
+  "description": "'filter indicators for tracking equality at work'",
+  "main": "src/app.js",
+  "scripts": {
+    "develop": "beefy src/app.js",
+    "build": "watchify src/app.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dumparkltd/tew-indicators.git"
+  },
+  "keywords": [
+    "indicators",
+    "human-rights-commission"
+  ],
+  "author": "dumparkltd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dumparkltd/tew-indicators/issues"
+  },
+  "homepage": "https://github.com/dumparkltd/tew-indicators",
+  "dependencies": {
+    "domready": "^1.0.7",
+    "fluxxor": "^1.5.2",
+    "react": "^0.12.2",
+    "react-router": "^0.12.4",
+    "reactify": "^1.0.0",
+    "superagent": "^0.21.0",
+    "url": "^0.10.3",
+    "watchify": "^2.4.0"
+  }
+}
