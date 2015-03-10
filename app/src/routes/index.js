@@ -3,10 +3,10 @@ var React         = require("react"),
     Route         = Router.Route,
     DefaultRoute  = Router.DefaultRoute;
 
-var Home          = require('components/main');
+var Main          = require('components/main');
 
 var routes = (
-  <Route handler={Home} name="home" path="/">
+  <Route handler={Main} name="home" path="/">
     // <Route handler={RecipeAdder} name="add-recipe" path="/recipe/add" />
 
     // <Route handler={EmptyView} path="/recipe/:id">

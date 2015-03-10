@@ -9,15 +9,16 @@ module.exports = React.createClass({
 		State
 	],
 
-
 	render: function () {
-		var data = this.flux.stores.indicators.getData()
-
-
+		var params 	= this.getParams() //not used
+		var data 		= this.flux.stores.indicators.query(params)
+		
 		return (
 			<ul>
 				{
-
+					data.map(function (d) {
+						return <li>{d.value}</li>
+					})
 				}
 			</ul>
 

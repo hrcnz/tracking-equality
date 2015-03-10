@@ -30,6 +30,7 @@
   "dependencies": {
     "domready": "^1.0.7",
     "fluxxor": "^1.5.2",
+    "lodash": "^3.5.0",
     "react": "^0.12.2",
     "react-router": "^0.12.4",
     "reactify": "^1.0.0",

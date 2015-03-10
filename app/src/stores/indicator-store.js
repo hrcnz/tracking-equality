@@ -1,10 +1,11 @@
 var Fluxxor = require("fluxxor");
 var actions = require("actions");
+var filter  = require('lodash.filter');
+var where   = require('lodash.where');
 
 
 var IndicatorStore = Fluxxor.createStore({
   initialize: function(options) {
-    this._data = options.data
     this.data = options.data
 
     this.bindActions(
@@ -14,11 +15,12 @@ var IndicatorStore = Fluxxor.createStore({
     );
   },
 
-  getData: function () {
-    return this.data
+  query: function (params) {
+    //TODO more query methods
+    return  this.data
   }
 
 
 });
 
-module.exports = RouteStore;
+module.exports = IndicatorStore;
