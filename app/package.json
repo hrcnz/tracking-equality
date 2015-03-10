@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/dumparkltd/tew-indicators",
   "dependencies": {
+    "browserify": "^9.0.3",
     "domready": "^1.0.7",
     "fluxxor": "^1.5.2",
     "lodash": "^3.5.0",
