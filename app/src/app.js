@@ -1,10 +1,17 @@
-var React = require("react"),
-    Router = require("react-router"),
-    Fluxxor = require("fluxxor");
+var React 					= require("react"),
+    Router 					= require("react-router"),
+    Fluxxor 				= require("fluxxor");
 
-var actions = require("actions"),
-    routes = require("routes"),
-    RouteStore = require("stores/route-store");
+var actions 				= require("actions"),
+    routes 					= require("routes"),
+    RouteStore 			= require("stores/route-store"),
+    IndicatorStore	= require('stores/indicator-store');
+
+var log 						= require('debug')('src:app')
+
+
+//TODO set with config | environment variable
+localStorage.setItem("debug", "*");
 
 //TODO handle async data load
 var data = require('data')
@@ -26,7 +33,7 @@ var flux = new Fluxxor.Flux(stores, actions.methods);
 
 router.run(function(Handler) {
   React.render(
-    <Handler flux={flux} />,
+    React.createElement(Handler, { flux: flux }),
     document.getElementById("app")
   );
 });

@@ -4,7 +4,7 @@
   "description": "'filter indicators for tracking equality at work'",
   "main": "src/app.js",
   "scripts": {
-    "develop": "beefy src/app.js",
+    "develop": "beefy src/app.js:build/bundle.js --index src/index.html --debug",
     "build": "watchify src/app.js -o bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,9 +29,12 @@
   "homepage": "https://github.com/dumparkltd/tew-indicators",
   "dependencies": {
     "browserify": "^9.0.3",
+    "debug": "^2.1.2",
     "domready": "^1.0.7",
     "fluxxor": "^1.5.2",
     "lodash": "^3.5.0",
+    "lodash.filter": "^3.0.0",
+    "lodash.where": "^3.1.0",
     "react": "^0.12.2",
     "react-router": "^0.12.4",
     "reactify": "^1.0.0",
