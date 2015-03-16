@@ -1,11 +1,12 @@
 var React 					= require("react"),
     Router 					= require("react-router"),
-    Fluxxor 				= require("fluxxor");
+    Fluxxor 				= require("fluxxor")
 
 var actions 				= require("actions"),
     routes 					= require("routes"),
     RouteStore 			= require("stores/route-store"),
-    IndicatorStore	= require('stores/indicator-store');
+    IndicatorStore	= require('stores/indicator-store'),
+    EthnicityStore  = require('stores/ethnicity-store')
 
 var log 						= require('debug')('src:app')
 
@@ -25,6 +26,7 @@ var router = Router.create({
 });
 
 var stores = {
+  ethnicity: new EthnicityStore({ data: data.ethnicity.elements }),
   indicators: new IndicatorStore({ data: data.indicators.elements }),
   route: new RouteStore({router: router})
 };
