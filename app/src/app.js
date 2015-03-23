@@ -1,14 +1,14 @@
-var React 					= require("react"),
-    Router 					= require("react-router"),
-    Fluxxor 				= require("fluxxor")
+var React           = require("react"),
+    Router          = require("react-router"),
+    Fluxxor         = require("fluxxor")
 
-var actions 				= require("actions"),
-    routes 					= require("routes"),
-    RouteStore 			= require("stores/route-store"),
-    IndicatorStore	= require('stores/indicator-store'),
+var actions         = require("actions"),
+    routes          = require("routes"),
+    RouteStore      = require("stores/route-store"),
+    IndicatorStore  = require('stores/indicator-store'),
     EthnicityStore  = require('stores/ethnicity-store')
 
-var log 						= require('debug')('src:app')
+var log             = require('debug')('src:app')
 
 
 //TODO set with config | environment variable
@@ -21,8 +21,8 @@ var data = require('data')
 // require("./style.less");
 
 var router = Router.create({
-	routes: routes,
-	location: Router.HistoryLocation
+  routes: routes,
+  location: Router.HistoryLocation
 });
 
 var stores = {
