@@ -6,7 +6,8 @@ var actions         = require("actions"),
     routes          = require("routes"),
     RouteStore      = require("stores/route-store"),
     IndicatorStore  = require('stores/indicator-store'),
-    EthnicityStore  = require('stores/ethnicity-store')
+    EthnicityStore  = require('stores/ethnicity-store'),
+    DataStore       = require('stores/data-store');
 
 var log             = require('debug')('src:app')
 
@@ -26,15 +27,17 @@ var router = Router.create({
 });
 
 var stores = {
+  data: new DataStore({ data: data.data.elements }),
   ethnicity: new EthnicityStore({ data: data.ethnicity.elements }),
   indicators: new IndicatorStore({ data: data.indicators.elements }),
-  route: new RouteStore({router: router})
+  route: new RouteStore({ router: router, path: '/' }),
+
 };
 
 var flux = new Fluxxor.Flux(stores, actions.methods);
 
 router.run(function(Handler) {
-  React.render(
+  React.render( 
     React.createElement(Handler, { flux: flux }),
     document.getElementById("app")
   );
