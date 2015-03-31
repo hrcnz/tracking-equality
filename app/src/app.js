@@ -4,10 +4,14 @@ var React           = require("react"),
 
 var actions         = require("actions"),
     routes          = require("routes"),
+    AgeStore        = require('stores/age-store'),
     RouteStore      = require("stores/route-store"),
     IndicatorStore  = require('stores/indicator-store'),
     EthnicityStore  = require('stores/ethnicity-store'),
-    DataStore       = require('stores/data-store');
+    DataStore       = require('stores/data-store'),
+    DisabilityStore = require('stores/disability-store'),
+    SexStore        = require('stores/sex-store'),
+    SOGIIStore      = require('stores/sogii-store')
 
 var log             = require('debug')('src:app')
 
@@ -27,11 +31,14 @@ var router = Router.create({
 });
 
 var stores = {
+  age: new AgeStore({ data: data.age.elements }),
   data: new DataStore({ data: data.data.elements }),
+  disability: new DisabilityStore({ data: data.disability.elements }),
   ethnicity: new EthnicityStore({ data: data.ethnicity.elements }),
   indicators: new IndicatorStore({ data: data.indicators.elements }),
   route: new RouteStore({ router: router, path: '/' }),
-
+  sex: new SexStore({ data: data.sex.elements }),
+  sogii: new SOGIIStore({ data: data.sogii.elements })
 };
 
 var flux = new Fluxxor.Flux(stores, actions.methods);
