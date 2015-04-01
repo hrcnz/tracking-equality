@@ -1,7 +1,9 @@
+//main
 var React           = require("react"),
     Router          = require("react-router"),
     Fluxxor         = require("fluxxor")
 
+//fluxxor
 var actions         = require("actions"),
     routes          = require("routes"),
     AgeStore        = require('stores/age-store'),
@@ -13,6 +15,12 @@ var actions         = require("actions"),
     SexStore        = require('stores/sex-store'),
     SOGIIStore      = require('stores/sogii-store')
 
+//helpers
+var insertCSS       = require('insert-css')
+var fs              = require('fs')
+
+
+//logging
 var log             = require('debug')('src:app')
 
 
@@ -24,6 +32,8 @@ var data = require('data')
 
 //TODO styles
 // require("./style.less");
+var boostrapCSS     = fs.readFileSync(__dirname + '/../node_modules/bootstrap/dist/css/bootstrap.css')
+insertCSS(boostrapCSS)
 
 var router = Router.create({
   routes: routes,
