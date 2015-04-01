@@ -32,8 +32,10 @@ var data = require('data')
 
 //TODO styles
 // require("./style.less");
-var boostrapCSS     = fs.readFileSync(__dirname + '/../node_modules/bootstrap/dist/css/bootstrap.css')
+var boostrapCSS           = fs.readFileSync(__dirname + '/../node_modules/bootstrap/dist/css/bootstrap.css')
+var reactSelectExampleCSS = fs.readFileSync(__dirname + '/styles/react-select-example.css')
 insertCSS(boostrapCSS)
+insertCSS(reactSelectExampleCSS)
 
 var router = Router.create({
   routes: routes,
