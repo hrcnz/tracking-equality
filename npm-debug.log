@@ -8,7 +8,7 @@
 4 verbose stack Error: ENOENT: no such file or directory, open '/home/simon/projects/tew-indicators/package.json'
 4 verbose stack     at Error (native)
 5 verbose cwd /home/simon/projects/tew-indicators
-6 error Linux 3.16.0-31-generic
+6 error Linux 3.16.0-33-generic
 7 error argv "/home/simon/.nvm/versions/io.js/v1.2.0/bin/iojs" "/home/simon/.nvm/versions/io.js/v1.2.0/bin/npm" "run" "develop"
 8 error node v1.2.0
 9 error npm  v2.5.1
