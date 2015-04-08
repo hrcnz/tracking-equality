@@ -56,12 +56,15 @@ var stores = {
 var flux = new Fluxxor.Flux(stores, actions.methods);
 
 router.run(function(Handler) {
-  React.render( 
+  React.render(
     React.createElement(Handler, { flux: flux }),
     document.getElementById("app")
   );
 });
 
+Router.HistoryLocation.addChangeListener(function (loc) {
+  log('Router listener', loc)
+})
 
 flux.on("dispatch", function(type, payload) {
   console.log("Dispatch:", type, payload);
