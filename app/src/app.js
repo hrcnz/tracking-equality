@@ -62,10 +62,7 @@ router.run(function(Handler) {
   );
 });
 
-Router.HistoryLocation.addChangeListener(function (loc) {
-  log('Router listener', loc)
-})
-
+//boilerplate logging
 flux.on("dispatch", function(type, payload) {
   console.log("Dispatch:", type, payload);
 });
