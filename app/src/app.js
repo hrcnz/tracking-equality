@@ -37,6 +37,10 @@ var reactSelectExampleCSS = fs.readFileSync(__dirname + '/styles/react-select-ex
 insertCSS(boostrapCSS)
 insertCSS(reactSelectExampleCSS)
 
+log('window HistoryLocation', window.history)
+
+var pathname = (window.history && window.history.state) ? window.history.state.path : '/'
+
 var router = Router.create({
   routes: routes,
   location: Router.HistoryLocation
@@ -48,7 +52,7 @@ var stores = {
   disability: new DisabilityStore({ data: data.disability.elements }),
   ethnicity: new EthnicityStore({ data: data.ethnicity.elements }),
   indicators: new IndicatorStore({ data: data.indicators.elements }),
-  route: new RouteStore({ router: router, path: '/' }),
+  route: new RouteStore({ router: router, pathname: pathname }),
   sex: new SexStore({ data: data.sex.elements }),
   sogii: new SOGIIStore({ data: data.sogii.elements })
 };
