@@ -18,11 +18,11 @@ var actions         = require("actions"),
 //helpers
 var insertCSS       = require('insert-css')
 var fs              = require('fs')
-
+var dataFetch       = require('data/fetch')
+// var tabletop        = require('tabletop').Tabletop
 
 //logging
 var log             = require('debug')('src:app')
-
 
 //TODO set with config | environment variable
 localStorage.setItem("debug", "*");
@@ -36,8 +36,6 @@ var boostrapCSS           = fs.readFileSync(__dirname + '/../node_modules/bootst
 var reactSelectExampleCSS = fs.readFileSync(__dirname + '/styles/react-select-example.css')
 insertCSS(boostrapCSS)
 insertCSS(reactSelectExampleCSS)
-
-log('window HistoryLocation', window.history)
 
 var pathname = (window.history && window.history.state) ? window.history.state.path : '/'
 
