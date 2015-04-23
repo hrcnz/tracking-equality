@@ -6,29 +6,51 @@ var React           = require("react"),
 //fluxxor
 var actions         = require("actions"),
     routes          = require("routes"),
-    AgeStore        = require('stores/age-store'),
-    RouteStore      = require("stores/route-store"),
-    IndicatorStore  = require('stores/indicator-store'),
-    EthnicityStore  = require('stores/ethnicity-store'),
-    DataStore       = require('stores/data-store'),
-    DisabilityStore = require('stores/disability-store'),
-    SexStore        = require('stores/sex-store'),
-    SOGIIStore      = require('stores/sogii-store')
+    initStores      = require('data/initStores'),
+    loadData        = require('data/load-data')
+
+//stores
+var DataStore           = require('stores/data-store'),
+    DataBreakdownStore  = require('stores/data-breakdown-store'),
+    DataGroupStore      = require('stores/data-group-store'),
+    DataSourceStore     = require('stores/data-source-store'),
+    DataTypeStore       = require('stores/data-type-store'),
+    IndicatorStore      = require('stores/indicator-store'),
+    IssueStore          = require('stores/issue-store'),
+    RecommendationStore = require('stores/recommendation-store'),
+    RouteStore          = require("stores/route-store")
 
 //helpers
 var insertCSS       = require('insert-css')
 var fs              = require('fs')
-
+var initStores       = require('data/initStores')
+// var tabletop        = require('tabletop').Tabletop
 
 //logging
 var log             = require('debug')('src:app')
 
-
 //TODO set with config | environment variable
 localStorage.setItem("debug", "*");
 
-//TODO handle async data load
-var data = require('data')
+var router = Router.create({
+  routes: routes,
+  location: Router.HistoryLocation
+})
+
+var key = '1nmW8b_2HDgMzvuyllWCSV2hc8uUpyNrTT0WAC_7MnhE'
+var pathname = (window.history && window.history.state) ? window.history.state.path : '/'
+
+var stores = {
+  data: new DataStore({ key: key, sheet: 'data', loadData: loadData  }),
+  dataBreakdowns: new DataBreakdownStore({ key: key, sheet: 'data_breakdowns', loadData: loadData  }),
+  dataGroups: new DataGroupStore({ key: key, sheet: 'data_groups', loadData: loadData  }),
+  dataSources: new DataSourceStore({ key: key, sheet: 'data_sources', loadData: loadData }),
+  dataTypes: new DataTypeStore({ key: key, sheet: 'data_types', loadData: loadData   }),
+  indicators: new IndicatorStore({ key: key, sheet: 'indicators', loadData: loadData  }),
+  issues: new IssueStore({ key: key, sheet: 'issues', loadData: loadData }),
+  recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData }),
+  routes: new RouteStore({ router: router, pathname: pathname  })
+}
 
 //TODO styles
 // require("./style.less");
@@ -37,32 +59,17 @@ var reactSelectExampleCSS = fs.readFileSync(__dirname + '/styles/react-select-ex
 insertCSS(boostrapCSS)
 insertCSS(reactSelectExampleCSS)
 
-var router = Router.create({
-  routes: routes,
-  location: Router.HistoryLocation
-});
-
-var stores = {
-  age: new AgeStore({ data: data.age.elements }),
-  data: new DataStore({ data: data.data.elements }),
-  disability: new DisabilityStore({ data: data.disability.elements }),
-  ethnicity: new EthnicityStore({ data: data.ethnicity.elements }),
-  indicators: new IndicatorStore({ data: data.indicators.elements }),
-  route: new RouteStore({ router: router, path: '/' }),
-  sex: new SexStore({ data: data.sex.elements }),
-  sogii: new SOGIIStore({ data: data.sogii.elements })
-};
 
 var flux = new Fluxxor.Flux(stores, actions.methods);
 
 router.run(function(Handler) {
-  React.render( 
+  React.render(
     React.createElement(Handler, { flux: flux }),
     document.getElementById("app")
   );
 });
 
-
+// boilerplate logging
 flux.on("dispatch", function(type, payload) {
   console.log("Dispatch:", type, payload);
 });
