@@ -4,14 +4,19 @@
   "description": "'filter indicators for tracking equality at work'",
   "main": "src/app.js",
   "scripts": {
-    "develop": "beefy src/app.js:build/bundle.js --index src/index.html --debug",
-    "build": "watchify src/app.js -o bundle.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "NODE_ENV=development npm run serve",
+    "build": "browserify src/app.js | uglifyjs > build/bundle.js",
+    "build-dev": "browserify src/app.js -o build/bundle.js -v",
+    "watch": "watchify src/app.js -o build/bundle.js -v",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "budo src/app.js:build/bundle.js --dir build --live | garnish",
+    "postinstall": "npm dedupe"
   },
   "browserify": {
     "transform": [
       "reactify",
-      "brfs"
+      "brfs",
+      "envify"
     ]
   },
   "repository": {
@@ -34,6 +39,7 @@
     "debug": "^2.1.2",
     "domready": "^1.0.7",
     "fluxxor": "^1.5.2",
+    "globals": "^6.4.1",
     "insert-css": "^0.2.0",
     "isarray": "0.0.1",
     "lodash": "^3.5.0",
@@ -61,6 +67,17 @@
     "watchify": "^2.4.0"
   },
   "devDependencies": {
-    "brfs": "^1.4.0"
+    "brfs": "^1.4.0",
+    "budo": "^3.1.1",
+    "easy-livereload": "^1.0.3",
+    "envify": "^3.4.0",
+    "express": "^4.12.3",
+    "garnish": "^2.1.3",
+    "gh-pages": "^0.2.0",
+    "live-server": "^0.7.1",
+    "livereload-js": "^2.2.2",
+    "livereload-static-server": "^0.1.2",
+    "node-dev": "^2.6.1",
+    "watchify": "^2.6.2"
   }
 }
