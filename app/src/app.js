@@ -1,3 +1,10 @@
+if (process.env.NODE_ENV === "development") {
+  //
+  // window.LiveReloadOptions = { host: 'localhost' }
+  // console.log('test')
+  // require('livereload-js')
+}
+
 //main
 var React           = require("react"),
     Router          = require("react-router"),
@@ -8,7 +15,6 @@ var actions         = require("actions"),
     routes          = require("routes"),
     initStores      = require('data/initStores'),
     loadData        = require('data/load-data')
-
 //stores
 var DataStore           = require('stores/data-store'),
     DataBreakdownStore  = require('stores/data-breakdown-store'),
@@ -36,6 +42,9 @@ var router = Router.create({
   routes: routes,
   location: Router.HistoryLocation
 })
+
+
+
 
 var key = '1nmW8b_2HDgMzvuyllWCSV2hc8uUpyNrTT0WAC_7MnhE'
 var pathname = (window.history && window.history.state) ? window.history.state.path : '/'

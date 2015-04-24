@@ -1,5 +1,6 @@
 node_modules
 !src/node_modules
-build
+build/*
+.publish
 ../npm-debug.log
 npm-debug.log
