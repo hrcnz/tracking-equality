@@ -7,6 +7,7 @@
     "develop": "NODE_ENV=development npm run serve",
     "build": "browserify src/app.js | uglifyjs > build/bundle.js",
     "build-dev": "browserify src/app.js -o build/bundle.js -v",
+    "deploy": "npm run build && node gh-pages.js",
     "watch": "watchify src/app.js -o build/bundle.js -v",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "budo src/app.js:build/bundle.js --dir build --live | garnish",
@@ -69,6 +70,7 @@
   "devDependencies": {
     "brfs": "^1.4.0",
     "budo": "^3.1.1",
+    "colors": "^1.0.3",
     "easy-livereload": "^1.0.3",
     "envify": "^3.4.0",
     "express": "^4.12.3",
