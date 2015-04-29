@@ -4,10 +4,11 @@
   "description": "'filter indicators for tracking equality at work'",
   "main": "src/app.js",
   "scripts": {
-    "develop": "NODE_ENV=development npm run serve",
+    "develop": "NODE_ENV=development npm run assets && npm run serve",
     "build": "browserify src/app.js | uglifyjs > build/bundle.js",
+    "assets": "cp src/index.html build/",
     "build-dev": "browserify src/app.js -o build/bundle.js -v",
-    "deploy": "npm run build && node gh-pages.js",
+    "deploy": "npm run build && npm run assets && node gh-pages.js",
     "watch": "watchify src/app.js -o build/bundle.js -v",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "budo src/app.js:build/bundle.js --dir build --live | garnish",
