@@ -35,8 +35,16 @@ var initStores       = require('data/initStores')
 //logging
 var log             = require('debug')('src:app')
 
+
+
+
+
+
 //TODO set with config | environment variable
 localStorage.setItem("debug", "*");
+
+log('routes', routes)
+
 
 var router = Router.create({
   routes: routes,
@@ -44,12 +52,11 @@ var router = Router.create({
 })
 
 
-
-
 var key = '1nmW8b_2HDgMzvuyllWCSV2hc8uUpyNrTT0WAC_7MnhE'
 var pathname = (window.history && window.history.state) ? window.history.state.path : '/'
 
 var stores = {
+  routes: new RouteStore({ router: router, pathname: pathname  }),
   data: new DataStore({ key: key, sheet: 'data', loadData: loadData  }),
   dataBreakdowns: new DataBreakdownStore({ key: key, sheet: 'data_breakdowns', loadData: loadData  }),
   dataGroups: new DataGroupStore({ key: key, sheet: 'data_groups', loadData: loadData  }),
@@ -57,8 +64,7 @@ var stores = {
   dataTypes: new DataTypeStore({ key: key, sheet: 'data_types', loadData: loadData   }),
   indicators: new IndicatorStore({ key: key, sheet: 'indicators', loadData: loadData  }),
   issues: new IssueStore({ key: key, sheet: 'issues', loadData: loadData }),
-  recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData }),
-  routes: new RouteStore({ router: router, pathname: pathname  })
+  recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData })
 }
 
 //TODO styles

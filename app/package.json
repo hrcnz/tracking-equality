@@ -5,14 +5,14 @@
   "main": "src/app.js",
   "scripts": {
     "dev-unix": "NODE_ENV=development npm run assets-unix && npm run serve",
-    "dev-win": "NODE_ENV=development npm run assets-win && npm run serve",
+    "dev-win": "NODE_ENV=development npm run assets-win && npm run build-dev && npm run serve",
     "build": "browserify src/app.js | uglifyjs > build/bundle.js",
     "build-dev": "browserify src/app.js -o build/bundle.js -v",
     "assets-unix": "cp src/index.html build/",
     "assets-win": "COPY COMMAND",
     "ready-deploy": "npm run build && npm run assets",
     "watch": "watchify src/app.js -o build/bundle.js -v",
-    "serve": "budo src/app.js:build/bundle.js --dir build | garnish",
+    "serve": "budo src/app.js:bundle.js --dir build -v | garnish",
     "deploy-unix": "node gh-pages.js",
     "postinstall": "npm dedupe"
   },
@@ -65,7 +65,7 @@
     "react-select": "^0.4.0",
     "reactify": "^1.0.0",
     "tabletop": "git://github.com/timwis/tabletop",
-    "url": "^0.10.3",
+    "url": "^0.10.3"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
