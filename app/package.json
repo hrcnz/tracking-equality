@@ -39,6 +39,7 @@
   "homepage": "https://github.com/dumparkltd/tew-indicators",
   "dependencies": {
     "bootstrap": "^3.3.4",
+    "capitalize": "^0.5.0",
     "debug": "^2.1.2",
     "domready": "^1.0.7",
     "fluxxor": "^1.5.2",
