@@ -48,9 +48,10 @@ log('routes', routes)
 
 var router = Router.create({
   routes: routes,
-  location: Router.HistoryLocation
+  location: Router.HashLocation
 })
 
+log('router', router)
 
 var key = '1nmW8b_2HDgMzvuyllWCSV2hc8uUpyNrTT0WAC_7MnhE'
 var pathname = (window.history && window.history.state) ? window.history.state.path : '/'
