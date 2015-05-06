@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "NODE_ENV=development npm run assets && npm run budo",
     "build": "browserify src/app.js | uglifyjs > build/bundle.js",
-    "build-dev": "browserify src/app.js -o build/bundle.js -v",
+    "build-dev": "browserify src/app.js -o build/bundle.js -v -d",
     "assets": "cp src/index.html build/",
     "ready-deploy": "npm run build && npm run assets",
-    "watch": "watchify src/app.js -o build/bundle.js -v",
+    "watch": "watchify src/app.js -o build/bundle.js -v -d",
     "budo": "budo src/app.js:bundle.js --dir build -v | garnish",
     "deploy-unix": "node gh-pages.js",
     "postinstall": "npm dedupe"
