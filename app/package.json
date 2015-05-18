@@ -38,6 +38,8 @@
   "dependencies": {
     "bootstrap": "^3.3.4",
     "capitalize": "^0.5.0",
+    "d3-color": "0.0.0",
+    "d3-interpolate-rgb": "0.0.0",
     "debug": "^2.1.2",
     "domready": "^1.0.7",
     "fluxxor": "^1.5.2",
@@ -59,6 +61,7 @@
     "lodash.result": "^3.0.0",
     "lodash.uniq": "^3.1.0",
     "lodash.where": "^3.1.0",
+    "numeral": "^1.5.3",
     "promise": "^7.0.0",
     "qs": "^2.4.1",
     "react": "^0.13.1",
