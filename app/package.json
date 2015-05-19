@@ -38,6 +38,8 @@
   "dependencies": {
     "bootstrap": "^3.3.4",
     "capitalize": "^0.5.0",
+    "d3-color": "0.0.0",
+    "d3-interpolate-rgb": "0.0.0",
     "debug": "^2.1.2",
     "domready": "^1.0.7",
     "fluxxor": "^1.5.2",
@@ -50,12 +52,16 @@
     "lodash.filter": "^3.0.0",
     "lodash.find": "^3.2.0",
     "lodash.foreach": "^3.0.2",
+    "lodash.groupby": "^3.1.0",
+    "lodash.map": "^3.1.2",
     "lodash.matches": "^3.1.0",
     "lodash.omit": "^3.1.0",
     "lodash.pluck": "^3.0.2",
+    "lodash.reduce": "^3.1.1",
     "lodash.result": "^3.0.0",
     "lodash.uniq": "^3.1.0",
     "lodash.where": "^3.1.0",
+    "numeral": "^1.5.3",
     "promise": "^7.0.0",
     "qs": "^2.4.1",
     "react": "^0.13.1",
@@ -69,7 +75,8 @@
     "string.prototype.startswith": "^0.2.0",
     "tabletop": "git://github.com/timwis/tabletop",
     "to-slug-case": "^0.1.2",
-    "url": "^0.10.3"
+    "url": "^0.10.3",
+    "xtend": "^4.0.0"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
