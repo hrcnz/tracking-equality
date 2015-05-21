@@ -36,10 +36,6 @@ var initStores       = require('data/initStores')
 var log             = require('debug')('src:app')
 
 
-
-
-
-
 //TODO set with config | environment variable
 localStorage.setItem("debug", "*");
 
@@ -50,9 +46,6 @@ var router = Router.create({
 
 // the google spreadhseet key
 var key = '1nmW8b_2HDgMzvuyllWCSV2hc8uUpyNrTT0WAC_7MnhE'
-
-
-var testKey = '1tqmFWhHqsCQ7-OjwHaDxW66xJ_3R8hTbF3PqTCEikbg'
 
 // initialise stores
 var stores = {
@@ -67,6 +60,21 @@ var stores = {
   recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData })
 }
 
+log('init flux...')
+var flux = new Fluxxor.Flux(stores, actions.methods);
+log('flux initialised')
+
+router.run(
+  function(Handler) {
+    log('rendering app...')
+    React.render(
+      React.createElement(Handler, { flux: flux }),
+      document.getElementById("app")
+    );
+  }
+);
+
+log('styles')
 //TODO styles
 // require("./style.less");
 var boostrapCSS           = fs.readFileSync(__dirname + '/../node_modules/bootstrap/dist/css/bootstrap.css')
@@ -74,17 +82,6 @@ var reactSelectExampleCSS = fs.readFileSync(__dirname + '/styles/react-select-ex
 insertCSS(boostrapCSS)
 insertCSS(reactSelectExampleCSS)
 
-
-var flux = new Fluxxor.Flux(stores, actions.methods);
-
-router.run(
-  function(Handler) {
-    React.render(
-      React.createElement(Handler, { flux: flux }),
-      document.getElementById("app")
-    );
-  }
-);
 
 // boilerplate logging
 flux.on("dispatch", function(type, payload) {
