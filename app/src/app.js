@@ -79,8 +79,9 @@ log('styles')
 // require("./style.less");
 var boostrapCSS           = fs.readFileSync(__dirname + '/../node_modules/bootstrap/dist/css/bootstrap.css')
 var reactSelectExampleCSS = fs.readFileSync(__dirname + '/styles/react-select-example.css')
+//insertCSS(reactSelectExampleCSS)
 insertCSS(boostrapCSS)
-insertCSS(reactSelectExampleCSS)
+
 
 
 // boilerplate logging
