@@ -29,8 +29,6 @@ var DataStore           = require('stores/data-store'),
 //helpers
 var insertCSS       = require('insert-css')
 var fs              = require('fs')
-var initStores       = require('data/initStores')
-// var tabletop        = require('tabletop').Tabletop
 
 //logging
 var log             = require('debug')('src:app')
@@ -78,7 +76,6 @@ log('styles')
 //TODO styles
 // require("./style.less");
 var boostrapCSS           = fs.readFileSync(__dirname + '/../node_modules/bootstrap/dist/css/bootstrap.css')
-var reactSelectExampleCSS = fs.readFileSync(__dirname + '/styles/react-select-example.css')
 //insertCSS(reactSelectExampleCSS)
 insertCSS(boostrapCSS)
 
