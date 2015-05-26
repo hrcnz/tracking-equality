@@ -72,6 +72,7 @@
     "reactable": "^0.10.1",
     "reactify": "^1.0.0",
     "slug": "^0.9.1",
+    "slugify": "^0.1.1",
     "string.prototype.startswith": "^0.2.0",
     "tabletop": "git://github.com/timwis/tabletop",
     "to-slug-case": "^0.1.2",
