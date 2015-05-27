@@ -48,14 +48,14 @@ var key = '1nmW8b_2HDgMzvuyllWCSV2hc8uUpyNrTT0WAC_7MnhE'
 // initialise stores
 var stores = {
   routes: new RouteStore({ router: router }),
-  data: new DataStore({ key: key, sheet: 'data', loadData: loadData  }),
+  issues: new IssueStore({ key: key, sheet: 'issues', loadData: loadData }),
+  indicators: new IndicatorStore({ key: key, sheet: 'indicators', loadData: loadData  }),  
   dataBreakdowns: new DataBreakdownStore({ key: key, sheet: 'data_breakdowns', loadData: loadData  }),
   dataGroups: new DataGroupStore({ key: key, sheet: 'data_groups', loadData: loadData  }),
   datasets: new DatasetStore({ key: key, sheet: 'data_sets', loadData: loadData  }),
   dataTypes: new DataTypeStore({ key: key, sheet: 'data_types', loadData: loadData   }),
-  indicators: new IndicatorStore({ key: key, sheet: 'indicators', loadData: loadData  }),
-  issues: new IssueStore({ key: key, sheet: 'issues', loadData: loadData }),
-  recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData })
+  recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData }),
+  data: new DataStore({ key: key, sheet: 'data', loadData: loadData })  
 }
 
 log('init flux...')
