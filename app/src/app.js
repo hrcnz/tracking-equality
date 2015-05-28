@@ -10,10 +10,12 @@ var React           = require("react"),
     Router          = require("react-router"),
     Fluxxor         = require("fluxxor")
 
+var Tabletop        = require('tabletop').Tabletop
+window.Tabletop     = Tabletop
+
 //fluxxor
 var actions         = require("actions"),
     routes          = require("routes"),
-    initStores      = require('data/initStores'),
     loadData        = require('data/load-data')
 //stores
 var DataStore           = require('stores/data-store'),
