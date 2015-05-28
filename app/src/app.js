@@ -22,7 +22,6 @@ var DataStore           = require('stores/data-store'),
     DataBreakdownStore  = require('stores/data-breakdown-store'),
     DataGroupStore      = require('stores/data-group-store'),
     DatasetStore        = require('stores/dataset-store'),
-    DataTypeStore       = require('stores/data-type-store'),
     IndicatorStore      = require('stores/indicator-store'),
     IssueStore          = require('stores/issue-store'),
     RecommendationStore = require('stores/recommendation-store'),
@@ -55,7 +54,6 @@ var stores = {
   dataBreakdowns: new DataBreakdownStore({ key: key, sheet: 'data_breakdowns', loadData: loadData  }),
   dataGroups: new DataGroupStore({ key: key, sheet: 'data_groups', loadData: loadData  }),
   datasets: new DatasetStore({ key: key, sheet: 'data_sets', loadData: loadData  }),
-  dataTypes: new DataTypeStore({ key: key, sheet: 'data_types', loadData: loadData   }),
   recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData }),
   data: new DataStore({ key: key, sheet: 'data', loadData: loadData })  
 }
