@@ -55,6 +55,7 @@
     "string.prototype.startswith": "^0.2.0",
     "tabletop": "git://github.com/timwis/tabletop",
     "to-slug-case": "^0.1.2",
+    "traverse": "^0.6.6",
     "url": "^0.10.3",
     "xtend": "^4.0.0"
   },
