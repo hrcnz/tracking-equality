@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+ <title>{title} - ZeroNet</title>
+ <meta charset="utf-8">
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="{server_url}/uimedia/all.css?rev={rev}" />
+ {meta_tags}
+</head>
+<body style="{body_style}">
+
+<script>
+// If we are inside iframe escape from it
+if (window.self !== window.top) window.open(window.location.toString(), "_top"); 
+if (window.self !== window.top) window.stop();
+</script>
+
+<div class="progressbar">
+ <div class="peg"></div>
+</div>
+
+<!-- Fixed button -->
+<div class='fixbutton'>
+ <div class='fixbutton-text'>0</div>
+ <div class='fixbutton-burger'>&#x2261;</div>
+ <a class='fixbutton-bg' href="{homepage}"></a>
+</div>
+
+
+<!-- Notifications -->
+<div class='notifications'>
+ <div class='notification template'><span class='notification-icon'>!</span> <span class='body'>Test notification</span><a class="close" href="#Close">&times;</a><div style="clear: both"></div></div>
+</div>
+
+
+<!-- Loadingscreen -->
+<div class='loadingscreen'>
+ <div class='loading-text console'>
+ </div>
+ <div class="flipper-container">
+  <div class="flipper"> <div class="front"></div><div class="back"></div> </div>
+ </div>
+</div>
+
+
+<!-- Site Iframe -->
+<iframe src='{inner_path}{query_string}' id='inner-iframe' sandbox="allow-forms allow-scripts allow-top-navigation allow-popups"></iframe>
+
+<!-- Site info -->
+<script>
+address = "{address}"
+wrapper_key = "{wrapper_key}"
+file_inner_path = "{file_inner_path}"
+permissions = {permissions}
+show_loadingscreen = {show_loadingscreen}
+server_url = '{server_url}'
+</script>
+<script type="text/javascript" src="{server_url}/uimedia/all.js?rev={rev}" asyc></script>
+
+</body>
+</html>
