@@ -36,7 +36,7 @@ var log             = require('debug')('src:app')
 
 
 //TODO set with config | environment variable
-localStorage.setItem("debug", "*");
+// localStorage.setItem("debug", "*");
 
 var router = Router.create({
   routes: routes,
@@ -50,12 +50,12 @@ var key = '1nmW8b_2HDgMzvuyllWCSV2hc8uUpyNrTT0WAC_7MnhE'
 var stores = {
   routes: new RouteStore({ router: router }),
   issues: new IssueStore({ key: key, sheet: 'issues', loadData: loadData }),
-  indicators: new IndicatorStore({ key: key, sheet: 'indicators', loadData: loadData  }),  
+  indicators: new IndicatorStore({ key: key, sheet: 'indicators', loadData: loadData  }),
   dataBreakdowns: new DataBreakdownStore({ key: key, sheet: 'data_breakdowns', loadData: loadData  }),
   dataGroups: new DataGroupStore({ key: key, sheet: 'data_groups', loadData: loadData  }),
   datasets: new DatasetStore({ key: key, sheet: 'data_sets', loadData: loadData  }),
   recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData }),
-  data: new DataStore({ key: key, sheet: 'data', loadData: loadData })  
+  data: new DataStore({ key: key, sheet: 'data', loadData: loadData })
 }
 
 log('init flux...')
