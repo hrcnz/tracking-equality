@@ -72,15 +72,6 @@ router.run(
   }
 );
 
-log('styles')
-//TODO styles
-// require("./style.less");
-var boostrapCSS           = fs.readFileSync(__dirname + '/../node_modules/bootstrap/dist/css/bootstrap.css')
-//insertCSS(reactSelectExampleCSS)
-insertCSS(boostrapCSS)
-
-
-
 // boilerplate logging
 flux.on("dispatch", function(type, payload) {
   console.log("Dispatch:", type, payload);
