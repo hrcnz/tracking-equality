@@ -1,0 +1,17 @@
+.chart-table > tbody > tr.table-row > td {
+  padding: 0;
+  border: 0;
+}
+
+.chart-table > tbody > tr.table-row.spacer > td {
+  height: 33px;
+}
+
+.chart-table > tbody > tr.table-row > td.cell-horizontal-bar {
+  border-left: 3px solid black;
+  padding-left: 0px;
+}
+.chart-table > tbody > tr.table-row > td.cell-horizontal-bar-spacer {
+  border-left: 3px solid white;
+  padding-left: 0px;
+}
