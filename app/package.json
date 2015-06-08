@@ -46,6 +46,7 @@
     "insert-css": "^0.2.0",
     "isarray": "0.0.1",
     "lodash": "^3.5.0",
+    "marked": "^0.3.3",
     "numeral": "^1.5.3",
     "promise": "^7.0.0",
     "qs": "^2.4.1",
