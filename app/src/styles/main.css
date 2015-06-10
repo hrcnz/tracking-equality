@@ -8,3 +8,33 @@ body {
   padding: 0;
   background-color: red*/
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*/issue*/
+ul.recommendation {
+  position: relative;
+  list-style: none
+}
+
+li.recommendation {
+  position: relative;
+  margin-bottom 20px
+}
+
+ul.recommendation span {
+  position: absolute;
+  line-height: 2em;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+ul.recommendation p {
+  font-size: 12pt helvetica, arial, sans-serif;
+  padding-left: 60px;
+}
