@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "dev": "NODE_ENV=development npm run assets && npm run watch-css && npm run budo",
-    "build": "NODE_ENV=production browserify src/app.js | uglifyjs > build/bundle.js && npm run build-css",
+    "build": "browserify src/app.js | uglifyjs > build/bundle.js && npm run build-css",
     "build-dev": "browserify src/app.js -o build/bundle.js -d  && npm run build-css",
     "assets": "cp src/index.html build/",
     "build-css": "cat src/styles/*.css > build/bundle.css",
@@ -44,6 +44,7 @@
     "debug": "^2.1.2",
     "fluxxor": "^1.5.2",
     "insert-css": "^0.2.0",
+    "is-nan": "1.0.1",
     "isarray": "0.0.1",
     "lodash": "^3.5.0",
     "marked": "^0.3.3",
