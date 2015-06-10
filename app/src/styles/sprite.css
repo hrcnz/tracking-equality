@@ -1,0 +1,58 @@
+/* SPRITE */
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  background: url('../img/tew-sprite.png') no-repeat top left;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.icon-logo {background-position: 0 0;}
+.icon-filter {background-position: 0 -50px;}
+.icon-filter-close,
+.open .icon-filter {background-position: -100px -50px;}
+.icon-map{background-position: -150px -100px;}
+.icon-fullscreen {background-position: -50px -100px;}
+.icon-fullscreen-close {background-position: -50px -150px;}
+.icon-share {background-position: -50px -200px;}
+.icon-share-fb {background-position: -150px -151px;}
+.icon-share-tw {background-position: -150px -200px;}
+.icon-share-fb-sm {background-position: -115px -316px;height: 20px;width:25px;}
+.icon-share-tw-sm {background-position: -115px -365px;height: 20px;width:25px;}
+.icon-max {background-position: 0 -250px;}
+.icon-min {background-position: -100px -250px;}
+.icon-close {background-position: 0 -300px;}
+.icon-close-sm{background-position: 0 -350px;}
+.icon-max-sm {background-position: 0 -400px;}
+.filter-group.open .icon-max-sm, .icon-min-sm {background-position: 0 -450px;}
+.icon-search {background-position: 0 -500px;}
+
+/* hover/active icons */
+a:hover .icon-logo{background-position: 0 0;}
+a:hover .icon-filter{background-position: -50px -50px;}
+a:hover .icon-filter-close,
+a.open:hover .icon-filter {background-position: -150px -50px;}
+a:hover .icon-map{background-position: -100px -100px;}
+a:hover .icon-fullscreen {background-position: 0 -100px;}
+a:hover .icon-fullscreen-close{background-position: 0 -150px;}
+a:hover .icon-share{background-position: 0 -200px;}
+a:hover .icon-share-fb{background-position: -100px -150px;}
+a:hover .icon-share-tw{background-position: -100px -200px;}
+a:hover .icon-max{background-position: -50px -250px;}
+a:hover .icon-min{background-position: -150px -250px;}
+a:hover .icon-close{background-position: -50px -300px;}
+a:hover .icon-close-sm {background-position: -50px -350px;}
+a:hover .icon-max-sm {background-position: -50px -400px;}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+
+  [class^="icon-"], [class*=" icon-"] {
+    background-image: url('../img/tew-sprite@2.png');
+    background-size: 201px 1850px;
+  }
+}
