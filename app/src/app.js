@@ -25,7 +25,8 @@ var DataStore           = require('stores/data-store'),
     IndicatorStore      = require('stores/indicator-store'),
     IssueStore          = require('stores/issue-store'),
     RecommendationStore = require('stores/recommendation-store'),
-    RouteStore          = require("stores/route-store")
+    RouteStore          = require("stores/route-store"),
+    ChartStore          = require("stores/chart-store")
 
 //helpers
 var insertCSS       = require('insert-css')
@@ -55,7 +56,8 @@ var stores = {
   dataGroups: new DataGroupStore({ key: key, sheet: 'data_groups', loadData: loadData  }),
   datasets: new DatasetStore({ key: key, sheet: 'data_sets', loadData: loadData  }),
   recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData }),
-  data: new DataStore({ key: key, sheet: 'data', loadData: loadData })
+  data: new DataStore({ key: key, sheet: 'data', loadData: loadData }),
+  charts: new ChartStore()
 }
 
 log('init flux...')
