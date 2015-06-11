@@ -1,20 +1,100 @@
 /*own style overrides*/
 
-body {
-  /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  background-color: red*/
-}
-
-* {
-  margin: 0;
-  padding: 0;
+.main-content {
+  padding: 0px;
+  background-color: #E2DFD6;
 }
 
 
+/*navbar*/
+.navbar-tew {
+  background-color: #38383B;
+  height: 100px;
+  margin-bottom: 0px
+}
+
+.navbar-tew > li > a :hover {
+  color: #8D825F;
+
+}
+
+.navbar-tew .container {
+  margin-left: 0px;
+  width: auto
+}
+
+.navbar-tew .header-logo {
+  height: 98px;
+  border-right: solid black 1px
+}
+
+li.title {
+  height: 100px;
+  padding-left: 30px
+}
+
+.navbar li.title > a {
+  padding: 0;
+}
+
+li.title h3 {
+  color: white;
+}
+
+li.title p {
+  color: #8D825F;
+}
+
+.navbar-tew .navbar-right > li > a {
+  color: #8D825F;
+  font-weight: bold;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+
+/*nav-primary*/
+
+
+.nav-primary-container {
+  width: 100%;
+  background-color: #ECEBE6
+}
+
+.nav-primary-row:before {
+  display: block;
+}
+
+.nav-primary:before {
+  display: block;
+}
+
+.nav-primary {
+  border-left: solid #E2DFE6 2px;
+  display: table;
+}
+
+.nav-issue {
+  margin-bottom: 0px
+}
+
+li.issue {
+  text-align: center;
+  height: 120px;
+}
+
+li.issue a {
+  text-decoration: none;
+  color: #38383B;
+}
+
+li.issue.active {
+  background-color: white;
+}
+
+li.issue .title {
+  font-weight: bold
+}
 
 /*/issue*/
 ul.recommendation {
@@ -28,8 +108,6 @@ li.recommendation {
 }
 
 ul.recommendation span {
-  position: absolute;
-  line-height: 2em;
   font-weight: bold;
   font-size: 24px;
 }

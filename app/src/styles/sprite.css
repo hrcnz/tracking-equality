@@ -1,13 +1,26 @@
 /* SPRITE */
 [class^="icon-"], [class*=" icon-"] {
   display: inline-block;
-  background: url('../img/tew-sprite.png') no-repeat top left;
+  background: url('../img/TEW-sprite.png') no-repeat top left;
   width: 50px;
   height: 50px;
   vertical-align: middle;
 }
 
-.icon-logo {background-position: 0 0;}
+/*.icon-big{
+  zoom:2;
+  -moz-transform:scale(2);
+  -moz-transform-origin: 0 0;
+}*/
+
+.icon-logo {background-position: 25px 20px; width: 100px; height: 50px}
+.icon-employment {background-position: 0px -125px; width: 100px; height: 50px}
+.icon-discrimination {background-position: 0px -225px; width: 100px; height: 50px}
+.icon-pay {background-position: 0px -325px; width: 100px; height: 50px}
+.icon-leadership {background-position: 0px -425px; width: 100px; height: 50px}
+
+
+
 .icon-filter {background-position: 0 -50px;}
 .icon-filter-close,
 .open .icon-filter {background-position: -100px -50px;}
