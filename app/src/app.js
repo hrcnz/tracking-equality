@@ -76,5 +76,5 @@ router.run(
 
 // boilerplate logging
 flux.on("dispatch", function(type, payload) {
-  console.log("Dispatch:", type, payload);
+//  console.log("Dispatch:", type, payload);
 });
