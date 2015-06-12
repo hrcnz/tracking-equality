@@ -1,0 +1,52 @@
+
+/*nav-primary*/
+.nav-primary-container {
+  width: 100%;
+  background-color: #ECEBE6
+}
+
+.nav-primary-row:before {
+  display: block;
+}
+
+.nav-primary:before {
+  display: block;
+}
+
+.nav-primary {
+  border-left: solid #E2DFE6 2px;
+  display: table;
+}
+
+.nav-primary-label {
+  border-left: solid 1px;
+  height: 120px;
+  padding-top: 20px;
+  color: #8D825F;
+  font-family: 'Droid serif', serif;
+  font-weight: bold;
+}
+
+.nav-issue {
+  border-left: solid #8D825F 1px;
+  margin-bottom: 0px
+}
+
+li.issue {
+  text-align: center;
+  height: 120px;
+}
+
+li.issue a {
+  padding: 20px 15px;
+  text-decoration: none;
+  color: #38383B;
+}
+
+li.issue.active {
+  background-color: white;
+}
+
+li.issue .title {
+  font-weight: bold
+}

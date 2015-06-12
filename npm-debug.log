@@ -1,0 +1,22 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/simon/.nvm/versions/io.js/v1.2.0/bin/iojs',
+1 verbose cli   '/home/simon/.nvm/versions/io.js/v1.2.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'dev' ]
+2 info using npm@2.5.1
+3 info using node@v1.2.0
+4 verbose stack Error: ENOENT: no such file or directory, open '/home/simon/projects/tew-indicators/package.json'
+4 verbose stack     at Error (native)
+5 verbose cwd /home/simon/projects/tew-indicators
+6 error Linux 3.16.0-37-generic
+7 error argv "/home/simon/.nvm/versions/io.js/v1.2.0/bin/iojs" "/home/simon/.nvm/versions/io.js/v1.2.0/bin/npm" "run" "dev"
+8 error node v1.2.0
+9 error npm  v2.5.1
+10 error path /home/simon/projects/tew-indicators/package.json
+11 error code ENOENT
+12 error errno -2
+13 error syscall open
+14 error enoent ENOENT: no such file or directory, open '/home/simon/projects/tew-indicators/package.json'
+14 error enoent This is most likely not a problem with npm itself
+14 error enoent and is related to npm not being able to find a file.
+15 verbose exit [ -2, true ]
