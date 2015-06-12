@@ -1,0 +1,46 @@
+/*/issue*/
+.issue-header {
+  padding-top: 45px;
+}
+
+.issue-title {
+  margin-top: 0px;
+}
+
+.issue-main {
+  padding-top: 30px;
+}
+
+.recommendations-header {
+  padding-bottom: 30px;
+}
+
+ul.recommendation-list {
+  position: relative;
+  list-style: none;
+  padding-left: 0px;
+  padding-bottom: 60px;
+}
+
+li.recommendation {
+  padding-top: 1em;
+  border-top: solid white 1px;
+  position: relative;
+  margin-bottom 20px
+}
+
+li.recommendation.last {
+  padding-bottom: 1em;
+  border-bottom: solid white 1px;
+}
+
+li.recommendation span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+li.recommendation p {
+  font-size: 12pt helvetica, arial, sans-serif;
+  padding-left: 60px;
+  margin: 0;
+}
