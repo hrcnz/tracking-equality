@@ -1,11 +1,9 @@
 /*own style overrides*/
 
-.main-content {
-  padding: 0px;
-  background-color: #E2DFD6;
-}
 
 body {
+  padding: 0px;
+  background-color: #E2DFD6;
   font-family: Arial, sans-serif;
 }
 
