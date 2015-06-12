@@ -1,116 +1,35 @@
 /*own style overrides*/
 
-.main-content {
+
+body {
   padding: 0px;
   background-color: #E2DFD6;
+  font-family: Arial, sans-serif;
 }
 
-
-/*navbar*/
-.navbar-tew {
-  background-color: #38383B;
-  height: 100px;
-  margin-bottom: 0px
+h1 {
+  font-size: 34px;
+  font-weight: bold;
 }
 
-.navbar-tew > li > a :hover {
-  color: #8D825F;
-
-}
-
-.navbar-tew .container {
-}
-
-.navbar-tew .header-logo {
-  height: 98px;
-  border-right: solid black 1px
-}
-
-li.title {
-  height: 100px;
-  padding-left: 30px
-}
-
-.navbar li.title > a {
-  padding: 0;
-}
-
-li.title h3 {
+h2 {
+  font-size: 34px;
+  font-weight: bold;
   color: white;
 }
 
-li.title p {
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
   color: #8D825F;
 }
 
-.navbar-tew .navbar-right > li > a {
-  color: #8D825F;
+h5 {
+  font-size: 14px;
   font-weight: bold;
-  padding-right: 30px;
-  padding-top: 30px;
-}
-
-
-/*nav-primary*/
-
-
-.nav-primary-container {
-  width: 100%;
-  background-color: #ECEBE6
-}
-
-.nav-primary-row:before {
-  display: block;
-}
-
-.nav-primary:before {
-  display: block;
-}
-
-.nav-primary {
-  border-left: solid #E2DFE6 2px;
-  display: table;
-}
-
-.nav-issue {
-  margin-bottom: 0px
-}
-
-li.issue {
-  text-align: center;
-  height: 120px;
-}
-
-li.issue a {
-  text-decoration: none;
-  color: #38383B;
-}
-
-li.issue.active {
-  background-color: white;
-}
-
-li.issue .title {
-  font-weight: bold
-}
-
-/*/issue*/
-ul.recommendation {
-  position: relative;
-  list-style: none
-}
-
-li.recommendation {
-  position: relative;
-  margin-bottom 20px
-}
-
-ul.recommendation span {
-  font-weight: bold;
-  font-size: 24px;
-}
-
-ul.recommendation p {
-  font-size: 12pt helvetica, arial, sans-serif;
-  padding-left: 60px;
+  color: white
 }
