@@ -65,3 +65,18 @@
   transform: translate(-50%,0);
 }
 
+.value-axis-label {
+  width: 100%;
+  text-align: right;
+  padding: 0 7px;
+}
+.value-axis-label .tick {
+  width: 10px;
+  border-top: 1px solid gray;
+  position: absolute;
+  top: 0;
+  right: -8px;
+}
+.value-axis-label .inner {
+  transform: translate(0,-50%);
+}
