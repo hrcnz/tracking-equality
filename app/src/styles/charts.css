@@ -75,8 +75,10 @@
   border-top: 1px solid gray;
   position: absolute;
   top: 0;
-  right: -8px;
+  right: 10px;
 }
 .value-axis-label .inner {
   transform: translate(0,-50%);
+  position:relative;
+  right:17px
 }
