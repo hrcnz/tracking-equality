@@ -6625,13 +6625,316 @@ button.close {
   color:#666;
   font-weight:bold;
   white-space: nowrap;
+}
+
+
+.line-label .inner {
+  position: absolute;
+  transform: translate(-50%,-100%);
+  padding: 1px;
+  margin-top: -4px;
+  left: 0px;
+  line-height: 14px;
+  background-color: rgba(255,255,255,0.3);
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.date-axis {
+  border-top: 2px solid black;
+  width: 100%;
+}
+
+.date-axis-label .inner{
+  transform: translate(-50%,0);
+}
+
+.value-axis-label {
+  width: 100%;
+  text-align: right;
+  padding: 0 7px;
+}
+.value-axis-label .tick {
+  width: 10px;
+  border-top: 1px solid gray;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.value-axis-label .inner {
+  transform: translate(0,-50%);
+  position:relative;
+  right:17px
+}
+.indicator-top {
+  padding-top: 30px;
+}
+/*/issue*/
+.issue-header {
+  padding-top: 45px;
+}
+
+.issue-title {
+  margin-top: 0px;
+}
+
+.issue-main {
+  padding-top: 30px;
+}
+
+.recommendations-header {
+  padding-bottom: 30px;
+}
+
+ul.recommendation-list {
+  position: relative;
+  list-style: none;
+  padding-left: 0px;
+  padding-bottom: 60px;
+}
+
+li.recommendation {
+  padding-top: 1em;
+  border-top: solid white 1px;
+  position: relative;
+  margin-bottom 20px
+}
+
+li.recommendation.last {
+  padding-bottom: 1em;
+  border-bottom: solid white 1px;
+}
+
+li.recommendation span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+li.recommendation p {
+  font-size: 12pt helvetica, arial, sans-serif;
+  padding-left: 60px;
+  margin: 0;
+}
+
+
+.indicator-preview-tile{
+  background:#EDECE7;
+  display: block;
+  margin-bottom:50px;
+  padding:10px;      
+}
+
+.indicator-preview-footer{
+  border-top:1px solid gray
+  min-height:30px;
+}
+.indicator-preview-header{
+  min-height:60px;
+}
+.indicator-preview-main{
+  min-height:200px
 }/*own style overrides*/
 
+
 body {
-  /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 0px;
+  background-color: #E2DFD6;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8D825F;
+}
+
+h5 {
   font-size: 14px;
-  color: #333;
-  margin: 0;
+  font-weight: bold;
+  color: white
+}
+
+a {
+  
+}
+a:hover,a:focus{
+  text-decoration:none
+}
+/*nav-primary*/
+.nav-primary-container {
+  width: 100%;
+  background-color: #ECEBE6
+}
+
+.nav-primary-row:before {
+  display: block;
+}
+
+.nav-primary:before {
+  display: block;
+}
+
+.nav-primary {
+  border-left: solid #E2DFE6 2px;
+  display: table;
+}
+
+.nav-primary-label {
+  border-left: solid 1px;
+  height: 120px;
+  padding-top: 20px;
+  color: #8D825F;
+  font-family: 'Droid serif', serif;
+  font-weight: bold;
+}
+
+.nav-issue {
+  border-left: solid #8D825F 1px;
+  margin-bottom: 0px
+}
+
+li.issue {
+  text-align: center;
+  height: 120px;
+}
+
+li.issue a {
+  padding: 20px 15px;
+  text-decoration: none;
+  color: #38383B;
+}
+
+li.issue.active {
+  background-color: white;
+}
+
+li.issue .title {
+  font-weight: bold
+}
+/*navbar*/
+.navbar-tew {
+  background-color: #38383B;
+  height: 100px;
+  margin-bottom: 0px
+}
+
+.navbar-tew > li > a :hover {
+  color: #8D825F;
+}
+
+.navbar-tew .header-logo {
+  height: 98px;
+  border-right: solid black 1px
+}
+
+li.title {
+  height: 100px;
+  padding-left: 30px
+}
+
+.navbar li.title > a {
   padding: 0;
-  background-color: red*/
+}
+
+li.title h3 {
+  font-family: 'Droid serif', serif;
+  font-weight: bold;
+  color: white;
+}
+
+li.title p {
+  color: #8D825F;
+}
+
+.navbar-tew .navbar-right > li > a {
+  color: #8D825F;
+  font-weight: bold;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+/* SPRITE */
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  background: url('./img/TEW-sprite.png') no-repeat top left;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+/*.icon-big{
+  zoom:2;
+  -moz-transform:scale(2);
+  -moz-transform-origin: 0 0;
+}*/
+
+.icon-logo {background-position: 25px 20px; width: 100px; height: 50px}
+.icon-employment {background-position: 0px -125px; width: 100px; height: 50px}
+.icon-discrimination {background-position: 0px -225px; width: 100px; height: 50px}
+.icon-pay {background-position: 0px -325px; width: 100px; height: 50px}
+.icon-leadership {background-position: 0px -425px; width: 100px; height: 50px}
+
+
+
+.icon-filter {background-position: 0 -50px;}
+.icon-filter-close,
+.open .icon-filter {background-position: -100px -50px;}
+.icon-map{background-position: -150px -100px;}
+.icon-fullscreen {background-position: -50px -100px;}
+.icon-fullscreen-close {background-position: -50px -150px;}
+.icon-share {background-position: -50px -200px;}
+.icon-share-fb {background-position: -150px -151px;}
+.icon-share-tw {background-position: -150px -200px;}
+.icon-share-fb-sm {background-position: -115px -316px;height: 20px;width:25px;}
+.icon-share-tw-sm {background-position: -115px -365px;height: 20px;width:25px;}
+.icon-max {background-position: 0 -250px;}
+.icon-min {background-position: -100px -250px;}
+.icon-close {background-position: 0 -300px;}
+.icon-close-sm{background-position: 0 -350px;}
+.icon-max-sm {background-position: 0 -400px;}
+.filter-group.open .icon-max-sm, .icon-min-sm {background-position: 0 -450px;}
+.icon-search {background-position: 0 -500px;}
+
+/* hover/active icons */
+a:hover .icon-logo{background-position: 0 0;}
+a:hover .icon-filter{background-position: -50px -50px;}
+a:hover .icon-filter-close,
+a.open:hover .icon-filter {background-position: -150px -50px;}
+a:hover .icon-map{background-position: -100px -100px;}
+a:hover .icon-fullscreen {background-position: 0 -100px;}
+a:hover .icon-fullscreen-close{background-position: 0 -150px;}
+a:hover .icon-share{background-position: 0 -200px;}
+a:hover .icon-share-fb{background-position: -100px -150px;}
+a:hover .icon-share-tw{background-position: -100px -200px;}
+a:hover .icon-max{background-position: -50px -250px;}
+a:hover .icon-min{background-position: -150px -250px;}
+a:hover .icon-close{background-position: -50px -300px;}
+a:hover .icon-close-sm {background-position: -50px -350px;}
+a:hover .icon-max-sm {background-position: -50px -400px;}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+
+  [class^="icon-"], [class*=" icon-"] {
+    background-image: url('../img/tew-sprite@2.png');
+    background-size: 201px 1850px;
+  }
 }
