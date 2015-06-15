@@ -36,13 +36,11 @@ li.recommendation.last {
 
 li.recommendation span {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 li.recommendation p {
   font-size: 12pt helvetica, arial, sans-serif;
-  padding-left: 60px;
-  margin: 0;
 }
 
 
@@ -50,7 +48,7 @@ li.recommendation p {
   background:#EDECE7;
   display: block;
   margin-bottom:50px;
-  padding:10px;      
+  padding:10px;
 }
 
 .indicator-preview-footer{
