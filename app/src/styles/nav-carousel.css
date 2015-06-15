@@ -1,0 +1,47 @@
+
+.hrc-nav-carousel {
+  display: table;
+  cursor: pointer;
+}
+
+.hrc-nav-carousel-labels > div {
+
+  text-align: center;
+  color: #8D825F;
+}
+
+.hrc-nav-carousel-row {
+  display: table-row;
+}
+
+.hrc-nav-carousel-row > div {
+  position: relative;
+  display: table-cell;
+}
+
+.previous {
+  position: absolute;
+  left: -9px;
+}
+
+.hrc-nav-carousel-label {
+  padding-bottom: 5px;
+}
+
+.hrc-nav-carousel-icons {
+
+}
+
+.hrc-nav-carousel-cell {
+  position: relative;
+}
+
+div.divider-right:after {
+  content: "";
+  background: #8D825F;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  height: 100%;
+  width: 1px;
+}
