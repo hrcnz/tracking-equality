@@ -15,34 +15,41 @@
   padding-bottom: 30px;
 }
 
-ul.recommendation-list {
+ul.hrc-list {
   position: relative;
   list-style: none;
   padding-left: 0px;
   padding-bottom: 60px;
 }
 
-li.recommendation {
+li.hrc-list-item {
+  vertical-align: top;
   padding-top: 1em;
+  padding-left: 20px;
   border-top: solid white 1px;
   position: relative;
   margin-bottom 20px
 }
 
-li.recommendation.last {
-  padding-bottom: 1em;
+li.last {
   border-bottom: solid white 1px;
 }
 
-li.recommendation span {
-  font-weight: bold;
-  font-size: 24px;
+.hrc-list-item-cell {
+  display: table-cell;
+  vertical-align: top;
 }
 
-li.recommendation p {
+.hrc-list-item-cell-number {
+  font-weight: bold;
+  width: 60px;
+  font-size: 26px;
+}
+
+.hrc-list-item-cell-title {
+  padding-top: 8px;
+  padding-bottom: 1em;
   font-size: 12pt helvetica, arial, sans-serif;
-  padding-left: 60px;
-  margin: 0;
 }
 
 
@@ -50,7 +57,7 @@ li.recommendation p {
   background:#EDECE7;
   display: block;
   margin-bottom:50px;
-  padding:10px;      
+  padding:10px;
 }
 
 .indicator-preview-footer{
