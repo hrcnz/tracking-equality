@@ -14,16 +14,21 @@
 }*/
 
 /*nav-primary*/
-.icon-logo {background-position: 25px 20px; width: 100px; height: 50px}
-.icon-employment {background-position: 0px -125px; width: 100px; height: 50px}
-.icon-discrimination {background-position: 0px -225px; width: 100px; height: 50px}
-.icon-pay {background-position: 0px -325px; width: 100px; height: 50px}
-.icon-leadership {background-position: 0px -425px; width: 100px; height: 50px}
+.icon-logo {background-position: 12px 12px; width: 100px; height: 100px}
+.icon-employment {background-position: -10px -125px; width: 100px; height: 50px}
+.icon-discrimination {background-position: -10px -225px; width: 100px; height: 50px}
+.icon-pay {background-position: -10px -325px; width: 100px; height: 50px}
+.icon-leadership {background-position: -10px -425px; width: 100px; height: 50px}
 
 /*nav-carousel*/
 .icon-previous {background-position: 12px -594px; width: 40px; height: 30px}
 .icon-next {background-position: 12px -645px; width: 40px; height: 30px}
 .icon-close {background-position: 1px -500px; width: 70px; height: 70px}
+
+/*indicator-preview*/
+.icon-barchart {background-position: 5px -895px; width: 40px; height: 30px}
+.icon-linechart {background-position: 5px -947px; width: 40px; height: 30px}
+
 
 .icon-close-sm{background-position: 0 -350px;}
 
