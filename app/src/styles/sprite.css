@@ -14,46 +14,61 @@
 }*/
 
 /* icons */
-.icon-hrc-logo-sm     {background-position: 0px 0px }
+.icon-hrc-logo-sm     {background-position: 0px 0px;  
+                       width: 100px;
+                       height: 100px; }
 
-.icon-employment      {background-position: 0px -100px }
+.icon-employment      {background-position: 0px -100px;  
+                       width: 100px;
+                       height: 80px; }
 .active .icon-employment,
 .active.icon-employment,      
+a:hover .icon-employment,
 .icon-employment:hover      
                       {background-position: -100px -100px }
 
-.icon-discrimination  {background-position: 0px -200px }
+.icon-discrimination  {background-position: 0px -200px;  
+                       width: 100px;
+                       height: 80px; }
 .active .icon-discrimination,
-.active.icon-discrimination,      
+.active.icon-discrimination,   
+a:hover .icon-discrimination,
 .icon-discrimination:hover      
-                      {background-position: -100px -200px }
+                      {background-position: -100px -200px}
                       
-.icon-pay             {background-position: 0px -300px }
+.icon-pay             {background-position: 0px -300px;  
+                       width: 80px;
+                       height: 80px; }
 .active .icon-pay,
 .active.icon-pay,      
 .icon-pay:hover      
                       {background-position: -100px -300px }
 
-.icon-leadership      {background-position: 0px -400px }
+.icon-leadership      {background-position: 0px -400px;  
+                       width: 100px;
+                       height: 80px; }
 .active .icon-leadership,
-.active.icon-leadership,      
+.active.icon-leadership,     
+a:hover .icon-leadership,
 .icon-leadership:hover      
                       {background-position: -100px -400px }
 
 .icon-close           {background-position: 0px -500px }
-.icon-arrow-left-lg   {background-position: 0px -550px }
-.icon-arrow-right-lg  {background-position: 0px -600px }
+.icon-previous        {background-position: 0px -550px }
+.icon-next            {background-position: 0px -600px }
 .icon-right-large     {background-position: 0px -650px }
 .icon-li-arrow        {background-position: 0px -700px }
 .icon-li-dot          {background-position: 0px -750px }
 .icon-information     {background-position: 0px -800px }
 .icon-arrow-right-sm  {background-position: 0px -850px }
 
-.icon-preview-snapshot{background-position: 0px -900px }
-.icon-preview-snapshot:hover
+.icon-barchart        {background-position: 0px -900px }
+a:hover .icon-barchart,
+.icon-barchart:hover
                       {background-position: -50px -900px }
-.icon-preview-timeline{background-position: 0px -950px }
-.icon-preview-timeline:hover
+.icon-linechart       {background-position: 0px -950px }
+a:hover .icon-linechart,
+.icon-linechart:hover
                       {background-position: -50px -950px }
                       
 .icon-menu            {background-position: 0px -1000px }
@@ -63,22 +78,30 @@
 .icon-social-linkedin {background-position: 0px -1100px }
 .icon-social-twitter  {background-position: 0px -1150px }
 
-.icon-explore-timeline{background-position: 0px -1200px }
-.icon-explore-timeline:hover
+.icon-timeline        {background-position: 0px -1200px; width:100px }
+a:hover .icon-timeline,
+.icon-timeline:hover
                       {background-position: -100px -1200px }
-.active .icon-explore-timeline,
-.active.icon-explore-timeline
+.active .icon-timeline,
+.active.icon-timeline
                       {background-position: -200px -1200px }
-.icon-explore-snapshot{background-position: 0px -1250px }
-.icon-explore-snapshot:hover
+                      
+                      
+.icon-snapshot        {background-position: 0px -1250px; width:100px }
+a:hover .icon-snapshot,
+.icon-snapshot:hover
                       {background-position: -100px -1250px }
-.active .icon-explore-snapshot,
-.active.icon-explore-snapshot
+.active .icon-snapshot,
+.active.icon-snapshot
                       {background-position: -200px -1250px }
 .icon-arrow-up-sm     {background-position: 0px -1300px }
 .icon-arrow-down-sm   {background-position: -50px -1300px }
-.icon-hrc-logo-claim  {background-position: 0px -1350px }
-.icon-hrc-logo        {background-position: 0px -1500px }
+.icon-hrc-logo-claim  {background-position: 0px -1350px;  
+                       width: 150px;
+                       height: 100px; }
+.icon-hrc-logo        {background-position: 0px -1500px;  
+                       width: 100px;
+                       height: 100px; }
 .icon-hrc-claim       {background-position: 0px -1600px }
 
 
@@ -142,6 +165,6 @@ Time-filter
 
   [class^="icon-"], [class*=" icon-"] {
     background-image: url('../img/tew-sprite@2.png');
-    background-size: 201px 1850px;
+    background-size: 200px 1650px;
   }
 }

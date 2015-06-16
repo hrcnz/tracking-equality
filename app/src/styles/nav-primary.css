@@ -33,15 +33,16 @@
 }
 
 li.issue {
-  padding-top: 12px;
   text-align: center;
-  height: 125px;
+  padding:0
 }
 
 li.issue a {
-  padding: 20px 15px;
+  width: 100%;
   text-decoration: none;
   color: #38383B;
+  height: 140px;
+  display: block;
 }
 
 li.issue.active {
