@@ -34,13 +34,15 @@
 
 li.nav-primary-li {
   text-align: center;
-  height: 120px;
+  padding:0
 }
 
 li.nav-primary-li a {
-  padding: 20px 15px;
+  width: 100%;
   text-decoration: none;
   color: #38383B;
+  padding-bottom: 20px;
+  display: block;
 }
 
 li.nav-primary-li.active {
@@ -48,5 +50,6 @@ li.nav-primary-li.active {
 }
 
 li.nav-primary-li .title {
+  padding-top: 10px;  
   font-weight: bold
 }
