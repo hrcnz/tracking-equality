@@ -29,6 +29,39 @@
 .icon-barchart {background-position: 5px -895px; width: 40px; height: 30px}
 .icon-linechart {background-position: 5px -947px; width: 40px; height: 30px}
 
+/*Time-filter*/
+.icon-snapshot-active {
+  background-color: #7F7C6F;
+  background-position: -90px -1218px;
+  width: 100px;
+  height: 75px;
+}
+.icon-snapshot {
+  background-color: #ECEBE6;
+  background-position: 10px -1218px;
+  width: 100px;
+  height: 75px;
+}
+.icon-timeline-active {
+  background-color: #7F7C6F;
+  background-position: -90px -1175px;
+  width: 100px;
+  height: 75px;
+}
+.icon-timeline {
+  background-color: #ECEBE6;
+  background-position: 10px -1175px;
+  width: 100px;
+  height: 75px;
+}
+.icon-dropdown-arrow {
+  background-color: #E2DFD6;
+  background-position: 81px -1288px;
+  width: 100px;
+  height: 30px;
+}
+
+
 
 .icon-close-sm{background-position: 0 -350px;}
 
