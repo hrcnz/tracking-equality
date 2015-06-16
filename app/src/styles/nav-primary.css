@@ -27,27 +27,26 @@
   font-weight: bold;
 }
 
-.nav-issue {
+.nav-primary-list {
   border-left: solid #8D825F 1px;
   margin-bottom: 0px
 }
-.nav-primary li.issue {
+
+li.nav-primary-li {
   text-align: center;
-  padding:0
+  height: 120px;
 }
 
-.nav-primary li.issue a {
-  width: 100%;
+li.nav-primary-li a {
+  padding: 20px 15px;
   text-decoration: none;
   color: #38383B;
-  padding-bottom: 20px;
-  display: block;
 }
 
-.nav-primary li.issue.active {
+li.nav-primary-li.active {
   background-color: white;
 }
-.nav-primary li.issue .title {
-  padding-top: 10px;
+
+li.nav-primary-li .title {
   font-weight: bold
 }
