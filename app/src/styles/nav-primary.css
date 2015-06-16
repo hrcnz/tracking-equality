@@ -33,8 +33,9 @@
 }
 
 li.issue {
+  padding-top: 12px;
   text-align: center;
-  height: 120px;
+  height: 125px;
 }
 
 li.issue a {
@@ -48,5 +49,6 @@ li.issue.active {
 }
 
 li.issue .title {
+  padding-top: 10px;
   font-weight: bold
 }
