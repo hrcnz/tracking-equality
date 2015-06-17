@@ -27,16 +27,17 @@
   font-weight: bold;
 }
 
-.nav-issue {
+.nav-primary-list {
   border-left: solid #8D825F 1px;
   margin-bottom: 0px
 }
-.nav-primary li.issue {
+
+li.nav-primary-li {
   text-align: center;
   padding:0
 }
 
-.nav-primary li.issue a {
+li.nav-primary-li a {
   width: 100%;
   text-decoration: none;
   color: #38383B;
@@ -44,10 +45,11 @@
   display: block;
 }
 
-.nav-primary li.issue.active {
+li.nav-primary-li.active {
   background-color: white;
 }
-.nav-primary li.issue .title {
-  padding-top: 10px;
+
+li.nav-primary-li .title {
+  padding-top: 10px;  
   font-weight: bold
 }
