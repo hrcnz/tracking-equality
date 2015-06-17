@@ -30,3 +30,7 @@ footer.hrc-footer {
 a.dumpark-link {
   color: #E2DFD6;
 }
+
+footer h4 {
+  text-transform: none;
+}

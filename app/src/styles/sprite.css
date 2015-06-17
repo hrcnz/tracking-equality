@@ -103,7 +103,9 @@ a:hover .icon-snapshot,
 .icon-hrc-logo        {background-position: 0px -1500px;  
                        width: 100px;
                        height: 100px; }
-.icon-hrc-claim       {background-position: 0px -1600px }
+.icon-hrc-claim       {background-position: 0px -1600px;
+                       width: 200px;
+                       height: 115px; }
 
 
 
