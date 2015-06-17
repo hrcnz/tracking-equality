@@ -14,9 +14,11 @@
 }*/
 
 /* icons */
-.icon-hrc-logo-sm     {background-position: 0px 0px;  
-                       width: 100px;
-                       height: 100px; }
+.icon-hrc-logo-sm {
+  background-position: 0px 0px;
+  width: 75px;
+  height: 50px;
+}
 
 .icon-employment      {background-position: 0px -100px;  
                        width: 100px;
@@ -98,14 +100,14 @@ a:hover .icon-snapshot,
 .icon-arrow-up-sm     {background-position: 0px -1300px }
 .icon-arrow-down-sm   {background-position: -50px -1300px }
 .icon-hrc-logo-claim  {background-position: 0px -1350px;  
-                       width: 150px;
-                       height: 100px; }
+                       width: 200px;
+                       height: 115px;  }
 .icon-hrc-logo        {background-position: 0px -1500px;  
                        width: 100px;
                        height: 100px; }
 .icon-hrc-claim       {background-position: 0px -1600px;
-                       width: 200px;
-                       height: 115px; }
+                       width: 100px;
+                       height: 100px; }
 
 
 
