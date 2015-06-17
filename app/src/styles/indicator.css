@@ -2,3 +2,8 @@
 .indicator-top {
   padding-top: 30px;
 }
+
+.indicator-main {
+  border-top: 1px solid #7F7C6F;
+  padding-top: 30px;
+}

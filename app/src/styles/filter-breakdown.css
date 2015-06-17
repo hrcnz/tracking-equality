@@ -1,19 +1,43 @@
 .hrc-list-group-item, .hrc-list-group-item:hover {
   margin-top: 3px;
   border: none;
-  background-color: #ECEBE6;
+  padding: 7px 10px;
+  background-color: #D3CFC1;
+  color: #7E7B6E;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
 
-.hrc-list-group-item.active,
-.hrc-list-group-item.active:hover,
+.hrc-list-group-item.active, 
+.hrc-list-group-item.active:hover, 
 .hrc-list-group-item.active:focus {
   background-color: #7E7B6E;
+  color: white;
+}
+.filter-breakdown-title {
+  font-weight: bold;
+  color: #B7B4AA;
+  font-size: 12px;
+  line-height: 18px;
 }
 
-.filter-breakdown-title {
-  color: #555;
+.filter-breakdown-dimension {
+  display: inline-block;
+  min-width: 120px;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.dimension-connector {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  margin-top: 18px;
+  font-family: 'Droid-serif';
+  font-size: 20px;
+  color: #B7B4AA;
+  font-weight: bold;
+  padding: 5px 0;
 }
