@@ -2,47 +2,30 @@ footer.hrc-footer {
   background-color: #EDECE7;
 }
 
-li.hrc-footer-info, li.hrc-footer-parentsite {
+.hrc-footer-info, .hrc-footer-parentsite {
   width: 325px;
 }
 
-li.hrc-footer-parentsite, li.hrc-footer-brand {
-
-}
-
-li.hrc-footer-parentsite p {
+.hrc-footer-parentsite p {
   padding-bottom: 10px;
 }
 
-li.hrc-footer-info {
+.hrc-footer-info {
   background-color: white;
 }
 
-li.hrc-footer-item {
+.hrc-footer-item {
   vertical-align: top;
   height: 150px;
 }
 
-li.hrc-footer-item a, p {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-li.hrc-footer-item p, div {
+.hrc-footer-item div,
+.hrc-footer-item p {
   padding-top: 30px;
-}
-
-li.hrc-footer-info, li.hrc-footer-parentsite p {
-
 }
 
 .hrc-footer-item a {
   color: #8D825F;
-}
-
-li.hrc-footer-info a {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 a.dumpark-link {
