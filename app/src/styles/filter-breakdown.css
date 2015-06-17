@@ -1,0 +1,19 @@
+.hrc-list-group-item, .hrc-list-group-item:hover {
+  margin-top: 3px;
+  border: none;
+  background-color: #ECEBE6;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.hrc-list-group-item.active,
+.hrc-list-group-item.active:hover,
+.hrc-list-group-item.active:focus {
+  background-color: #7E7B6E;
+}
+
+.filter-breakdown-title {
+  color: #555;
+}
