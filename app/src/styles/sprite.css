@@ -79,7 +79,7 @@ a:hover .icon-linechart,
 .icon-social-linkedin {background-position: 0px -1100px }
 .icon-social-twitter  {background-position: 0px -1150px }
 
-.icon-timeline        {background-position: 0px -1200px; width:100px }
+.icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 32px; }
 a:hover .icon-timeline,
 .icon-timeline:hover
                       {background-position: -100px -1200px }
@@ -88,13 +88,13 @@ a:hover .icon-timeline,
                       {background-position: -200px -1200px }
                       
                       
-.icon-snapshot        {background-position: 0px -1250px; width:100px }
+.icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 32px; }
 a:hover .icon-snapshot,
 .icon-snapshot:hover
-                      {background-position: -100px -1250px }
+                      {background-position: -200px -1250px }
 .active .icon-snapshot,
 .active.icon-snapshot
-                      {background-position: -200px -1250px }
+                      {background-position: -100px -1250px }
 .icon-arrow-up-sm     {background-position: 0px -1300px }
 .icon-arrow-down-sm   {background-position: -50px -1300px }
 .icon-hrc-logo-claim  {background-position: 0px -1350px;  
