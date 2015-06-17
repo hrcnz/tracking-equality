@@ -53,10 +53,11 @@ a:hover .icon-leadership,
 .icon-leadership:hover      
                       {background-position: -100px -400px }
 
-.icon-close           {background-position: 0px -500px }
-.icon-previous        {background-position: 0px -550px }
-.icon-next            {background-position: 0px -600px }
-.icon-right-large     {background-position: 0px -650px }
+.icon-close           {background-position: 0px -500px;  
+                       width: 68px;
+                        height: 68px; }
+.icon-previous        {background-position: 0px -600px;  width: 13px; }
+.icon-next            {background-position: 0px -650px;  width: 13px; }
 .icon-li-arrow        {background-position: 0px -700px }
 .icon-li-dot          {background-position: 0px -750px }
 .icon-information     {background-position: 0px -800px }

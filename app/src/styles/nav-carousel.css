@@ -1,47 +1,33 @@
-
-.hrc-nav-carousel {
-  display: table;
-  cursor: pointer;
-}
-
-.hrc-nav-carousel-labels > div {
-
+.hrc-nav-carousel a {
   text-align: center;
   color: #8D825F;
+  min-width: 50px;
+  padding: 0;
 }
 
-.hrc-nav-carousel-row {
-  display: table-row;
+.hrc-carousel-icon {
+  height: 68px;
+}
+.hrc-carousel-icon-previous,
+.hrc-carousel-icon-next{
+  padding-top: 23px;
 }
 
-.hrc-nav-carousel-row > div {
+.hrc-nav-carousel-list li {
+  padding: 0;
   position: relative;
-  display: table-cell;
-}
-
-.previous {
-  position: absolute;
-  left: -9px;
 }
 
 .hrc-nav-carousel-label {
   padding-bottom: 5px;
 }
 
-.hrc-nav-carousel-icons {
-
-}
-
-.hrc-nav-carousel-cell {
-  position: relative;
-}
-
-div.divider-right:after {
+.hrc-nav-carousel-li-previous:after {
   content: "";
   background: #8D825F;
   position: absolute;
-  bottom: 0;
+  height:30px;
   right: 0px;
-  height: 100%;
+  top: 41px;
   width: 1px;
 }
