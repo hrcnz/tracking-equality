@@ -7,36 +7,62 @@ body {
   font-family: Arial, sans-serif;
 }
 
+p {
+  font-size:14px;
+  line-height:20px;
+}
+.small p,
+p .small,
+p.small {
+  font-size:12px;
+  line-height:18px;
+}
+
 h1 {
   font-size: 34px;
+  line-height: 40px;
   font-weight: bold;
 }
 
 h2 {
   font-size: 34px;
+  line-height: 40px;
   font-weight: bold;
   color: white;
+  text-transform:uppercase;
 }
 
 h3 {
   font-size: 26px;
+  line-height: 34px;
 }
 
 h4 {
   font-size: 16px;
+  line-height: 20px;
   font-weight: bold;
   color: #8D825F;
+  text-transform:uppercase;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform:uppercase;
+  color: #7F7C6F
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform:uppercase;
+  color: #7F7C6F
 }
 
 .emphasis {
   color: black;
 }
 
-h5 {
-  font-size: 14px;
-  font-weight: bold;
-  color: white
-}
 
 a, a:hover {
   font-size: 14px;
