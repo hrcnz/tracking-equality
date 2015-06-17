@@ -1,0 +1,35 @@
+
+.filter-group {
+  padding-top: 15px;
+}
+
+.filters-header {
+  margin-bottom: 0;
+}
+
+.filter-group-title h5,
+.filter-group-title a {
+  display: inline-block;
+}
+
+.filter-group-title h5 {
+  color: #38383B;
+}
+
+.filter-group-clear-all {
+  margin-top: 7px;
+}
+
+.filter-group-btn-list-button {
+  margin-top: 4px !important;
+  background-color: #ECEBE6;
+  border: none;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.filter-group-btn-list-button.active {
+  background-color: #7E7B6E;
+}
