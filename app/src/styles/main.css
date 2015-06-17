@@ -38,9 +38,19 @@ h5 {
   color: white
 }
 
-a {
-
+a, a:hover {
+  font-size: 14px;
+  color: #8D825F;
 }
 a:hover,a:focus{
   text-decoration:none
+}
+
+.btn.active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn:focus {
+  outline: none !important
 }
