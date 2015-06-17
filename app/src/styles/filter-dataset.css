@@ -1,58 +1,59 @@
-
-
-.date-filter-timeline, .date-filter-snapshot {
-
+.date-filter-group {
+  margin-bottom: 10px;
 }
-
-li.date-filter-icon {
-  cursor: pointer;
-  position: relative;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.date-filter-title {
-  height: 23px;
-  width: 91px;
-  position: absolute;
-  padding-top: 6px;
-  left: 9px;
-  top: 0px;
-  color: #7F7C6F;
-  background-color: #ECEBE6;
-}
-
-.date-filter-title.active {
-  background-color: #7F7C6F;
-  color: white;
-}
-
-/*uses .icon-dropdown-arrow for background -> sprite.css*/
-.date-filter-date-select-wrapper {
+.date-filter-group a.btn {
+  background-color: #EDECE7;
+  border-radius: 0;
+  text-align: left;
+  padding: 5px 10px 10px;
   width: 100px;
-  overflow: hidden;
-
+}
+.date-filter-group a.btn.active {
+  background-color: #7F7C6F;
+  color:#fff
+}
+.date-filter-label {
+  font-weight: bold;
+  margin-bottom: 9px;
 }
 
-.date-filter-date-select {
-  background: transparent;
-  font-size: 16px;
+
+.date-filter-options {
+  height: 40px;
+}
+.date-filter-options .btn-link {
+  width: 100px;
+  border-bottom: 1px solid #7F7C6F;
   font-weight: bold;
-  height: 30px;
-  width: 125px;
-  outline: none;
-  border: solid 1px #E2DFD6;
-  border-bottom: solid 1px #7F7C6F;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  color: #7F7C6F;
   border-radius: 0;
   font-size: 16px;
-  font-weight: bold;
+  padding: 0px 10px;
+  text-align: left;
+  position: relative;
+}
+.date-filter-options .btn-link:focus, 
+.date-filter-options .btn-link:hover {
+  text-decoration:none
+}
+.date-filter-options .btn-link .caret {
+  background: url('./img/TEW-sprite.png') no-repeat top left;
+  display: inline-block;
+  background-position: 0px -1300px;
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  right: 1px;
+  top: 7px;
+  border:none
+}
+.date-filter-options .open.btn-group .btn-link .caret {
+  background-position: -50px -1300px;
 }
 
-.date-filter-date-select:focus {
-  border: solid 1px #E2DFD6;
-  border-bottom: solid 1px #7F7C6F;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.date-filter-options .dropdown-menu {
+  min-width: 100px;
+}
+.date-filter-options .dropdown-menu > li > a {
+  padding: 3px 10px;
 }

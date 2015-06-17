@@ -1,0 +1,32 @@
+footer.hrc-footer {
+  background-color: #EDECE7;
+}
+
+.hrc-footer-info, .hrc-footer-parentsite {
+}
+
+.hrc-footer-parentsite p {
+  padding-bottom: 10px;
+}
+
+.hrc-footer-info {
+  background-color: white;
+}
+
+.hrc-footer-item {
+  vertical-align: top;
+  height: 150px;
+}
+
+.hrc-footer-item div,
+.hrc-footer-item p {
+  padding-top: 30px;
+}
+
+.hrc-footer-item a {
+  color: #8D825F;
+}
+
+a.dumpark-link {
+  color: #E2DFD6;
+}
