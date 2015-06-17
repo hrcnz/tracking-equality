@@ -6,16 +6,18 @@
 .filters-header {
   margin-bottom: 0;
 }
-
-.filter-group-title h5,
-.filter-group-title a {
-  display: inline-block;
+.filter-group-title {
+  position: relative;
 }
-
-.filter-group-title h5 {
+.filter-group-title h6 {
+  display: inline-block;
   color: #38383B;
 }
-
+.filter-group-title a {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .filter-group-clear-all {
   margin-top: 7px;
 }
@@ -32,4 +34,5 @@
 
 .filter-group-btn-list-button.active {
   background-color: #7E7B6E;
+  color:white
 }
