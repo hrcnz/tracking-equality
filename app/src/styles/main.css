@@ -93,6 +93,6 @@ a:hover,a:focus{
   box-shadow: none;
 }
 
-.btn:focus {
+.btn:focus, input:focus {
   outline: none !important
 }
