@@ -1,5 +1,9 @@
 /*navbar*/
-.navbar-tew .container {
+.navbar-tew-wrapper {
+  position: relative;
+}
+
+.navbar-tew > .container {
   width: 100%;
 }
 
