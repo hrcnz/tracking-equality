@@ -52,22 +52,42 @@ li.last {
   font-size: 12pt helvetica, arial, sans-serif;
 }
 
-
 .indicator-preview-tile{
   background:#EDECE7;
   display: block;
   margin-bottom:50px;
-  padding:10px;
+  padding:15px;
+}
+
+.date p {
+  font-weight: bold;
+}
+
+.preview-totals > .fact p {
+  font-size: 20px;
+}
+
+.fact h1, .fact p {
+  color: #EDB61A;
 }
 
 .indicator-preview-footer{
-  border-top:solid 1px gray;
+  border-top:solid 1px #555;
   padding-top: 10px;
+  margin-top: 30px;
   margin-bottom: 0px;
 }
+
+.indicator-preview-icon-wrap {
+  width: 40px;
+  height: 40px;
+}
+
+.indicator-preview-icon-wrap div {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 .indicator-preview-header{
   min-height:60px;
-}
-.indicator-preview-main{
-  min-height:200px
 }
