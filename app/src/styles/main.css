@@ -75,6 +75,10 @@ h6 {
   color: #7F7C6F
 }
 
+.sources h6 {
+  text-transform:normal;
+}
+
 .emphasis {
   color: black;
 }
