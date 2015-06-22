@@ -1,10 +1,3 @@
-if (process.env.NODE_ENV === "development") {
-  //
-  // window.LiveReloadOptions = { host: 'localhost' }
-  // console.log('test')
-  // require('livereload-js')
-}
-
 //main
 var React           = require("react"),
     Router          = require("react-router"),
@@ -28,9 +21,8 @@ var DataStore           = require('stores/data-store'),
     RouteStore          = require("stores/route-store"),
     ChartStore          = require("stores/chart-store")
 
-//helpers
-var insertCSS       = require('insert-css')
-var fs              = require('fs')
+//shim    
+require("es5-shim")
 
 //logging
 var log             = require('debug')('src:app')
@@ -73,8 +65,3 @@ router.run(
     );
   }
 );
-
-// boilerplate logging
-flux.on("dispatch", function(type, payload) {
-//  console.log("Dispatch:", type, payload);
-});
