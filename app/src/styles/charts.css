@@ -11,6 +11,54 @@
   white-space: nowrap;
   padding-right: 20px !important;
   color: #7F7C6F;
+  vertical-align: middle;
+}
+
+.chart-table td.group-label-range {
+  font-weight:bold
+}  
+
+.range-wrapper .gap{
+  background-color: #BFBDB7; 
+  height: 3px; 
+  position: absolute;
+  margin-top: -4px;
+  top: 100%
+              
+}
+.range-wrapper .range-icon {
+  border: 4px solid black;
+  border-radius: 4px;
+  width: 0;
+  position: absolute;
+  top: 100%;
+  margin-top: -7px;
+  margin-left: -2px;
+}
+
+.gap-label.label-min {
+  position:absolute;
+  left: 0;
+  white-space: nowrap;
+  margin-left:-2px;
+}
+.gap-label .label-value {
+  font-weight: bold;
+}
+.gap-label .label-group {
+  font-size: 12px;
+} 
+.gap-label.label-min .label-value {
+  padding-right:4px;
+}
+.gap-label.label-max {
+  position:absolute;
+  right: 100%;
+  white-space: nowrap;
+  margin-right:-7px;     
+}
+.gap-label.label-max .label-value {
+  padding-left:4px;
 }
 
 .chart-table > tbody > tr.table-row.spacer > td {

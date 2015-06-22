@@ -28,14 +28,12 @@
   display: inline-block;
   min-width: 120px;
   vertical-align: top;
-  margin-right: 20px;
 }
 
 .dimension-connector {
-  display: inline-block;
-  margin-right: 20px;
+  display: inline-block;  
   position: relative;
-  margin-top: 18px;
+  margin: 18px 10px;
   font-family: 'Droid-serif';
   font-size: 20px;
   color: #B7B4AA;
