@@ -13,7 +13,9 @@
   color: #7F7C6F;
   vertical-align: middle;
 }
-
+td.breakdown-column-header {
+  padding-right: 10px !important;
+}
 .chart-table td.group-label-range {
   font-weight:bold
 }  
@@ -59,6 +61,13 @@
 }
 .gap-label.label-max .label-value {
   padding-left:4px;
+}
+
+td.group-label-range-top{
+  vertical-align:top
+}
+td.group-label-range-bottom {
+  vertical-align:bottom
 }
 
 .chart-table > tbody > tr.table-row.spacer > td {

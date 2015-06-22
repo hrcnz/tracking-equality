@@ -103,3 +103,10 @@ a:hover,a:focus{
     width: 970px;
   }
 }
+
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #B1AEA3;
+}
