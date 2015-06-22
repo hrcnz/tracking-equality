@@ -1,3 +1,8 @@
+.hrc-filter-groups {
+  border-top: 1px solid #B1AEA3;
+  padding-top: 5px;  
+  margin-top: 55px;  
+}
 
 .filter-group {
   padding-top: 15px;
@@ -35,4 +40,9 @@
 .filter-group-btn-list-button.active {
   background-color: #7E7B6E;
   color:white
+}
+
+.groups-footnotes {
+  margin: 40px 0;
+  color: #7F7C6F;
 }

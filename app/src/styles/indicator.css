@@ -3,7 +3,22 @@
   padding-top: 30px;
 }
 
-.indicator-main {
-  border-top: 1px solid #7F7C6F;
+.indicator-main {  
   padding-top: 30px;
+}
+
+.indicator-chart {
+  padding-bottom: 40px;
+  border-bottom: 2px solid #B1AEA3;
+  margin-bottom: 40px;
+}
+
+.indicator-aside .sources {
+  border-top: 1px solid white;
+  padding-top: 40px;
+  color: #7F7C6F;
+}
+
+.sources .dataset-title {
+  font-weight: bold
 }
