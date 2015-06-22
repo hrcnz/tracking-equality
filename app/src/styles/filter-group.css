@@ -1,3 +1,8 @@
+.hrc-filter-groups {
+  border-top: 1px solid #B1AEA3;
+  padding-top: 5px;  
+  margin-top: 55px;  
+}
 
 .filter-group {
   padding-top: 15px;

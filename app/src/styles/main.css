@@ -6,7 +6,7 @@ html,body,#app {
 }
 body {
   padding: 0px;
-  background-color: #E2DFD6;
+  background-color: #E3E0D7;
   font-family: Arial, sans-serif;
 }
 .home {
@@ -81,7 +81,6 @@ h6 {
 
 
 a, a:hover {
-  font-size: 14px;
   color: #8D825F;
 }
 a:hover,a:focus{
@@ -95,4 +94,12 @@ a:hover,a:focus{
 
 .btn:focus, input:focus {
   outline: none !important
+}
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
 }
