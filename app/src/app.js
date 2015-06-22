@@ -21,7 +21,7 @@ var DataStore           = require('stores/data-store'),
     RouteStore          = require("stores/route-store"),
     ChartStore          = require("stores/chart-store")
 
-//shim    
+// shim
 require("es5-shim")
 
 //logging
