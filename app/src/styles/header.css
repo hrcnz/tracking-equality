@@ -1,0 +1,62 @@
+/*navbar*/
+.navbar-tew > .container {
+  width: 100%;
+}
+
+.navbar-tew {
+  background-color: #38383B;
+  margin-bottom: 0px;
+  border: 0;
+  border-radius: 0;   
+  padding: 0 20px;
+}
+.header-logo.navbar-brand {
+  padding: 25px;
+}
+.header-claim {
+  padding: 36px 25px;
+}
+.navbar-tew a:hover {
+  color: #8D825F;
+}
+
+.navbar-tew .header-logo {
+  height: 98px;
+  border-right: solid black 1px
+}
+.header-intro .navbar-tew .header-logo {
+  border-right: solid black 0
+}
+
+li.hrc-title-item {
+  height: 100px;
+  padding-left: 30px;
+}
+
+.navbar li.hrc-title-item > a {
+  padding: 0;
+}
+
+li.hrc-title-item .hrc-subtitle {
+  color: #8D825F;
+}
+
+.navbar-tew .navbar-right  a {
+  font-weight: bold;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+.navbar-tew.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-tew.navbar-default .navbar-nav > .active > a, 
+.navbar-tew.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-tew.navbar-default .navbar-nav > .active > a:focus {
+  color: #8D825F;
+  background: none;
+}
+.navbar-tew.navbar-default .navbar-nav > li > a:hover, 
+.navbar-tew.navbar-default .navbar-nav > li > a:focus {
+  color: #8D825F;
+  background: none;
+}
