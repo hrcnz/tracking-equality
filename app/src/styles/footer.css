@@ -27,10 +27,20 @@ footer.hrc-footer {
   color: #8D825F;
 }
 
-a.dumpark-link {
-  color: #E2DFD6;
+.hrc-footer-item {
+  vertical-align: top;
+  min-height: 180px;
+}
+
+a.builtby {
+  color: #C2C0BA;
+  position: absolute;
+  bottom: 10px;
 }
 
 footer h4 {
   text-transform: none;
+}
+.hrc-footer-brand-logo {
+  text-align: right;
 }
