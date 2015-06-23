@@ -4926,23 +4926,6 @@ li.hrc-title-item .hrc-subtitle {
   margin-bottom: 20px;
 }
 
-.intro-issue-select {
-  width: 100%;
-  background-color: #ECEBE6;
-}
-
-.intro-ul {
-  margin-bottom: 0px;
-}
-
-.intro-li {
-  border-left: solid #E2DFD6 2px;
-}
-
-.intro-li.last {
-  border-right: solid #E2DFD6 2px;
-}
-
 .intro-read-more {
   margin-top: 20px;
 }
@@ -5095,7 +5078,7 @@ h2 {
   font-size: 34px;
   line-height: 40px;
   font-weight: bold;
-  color: white;
+  color: #B0AF9F;
   text-transform:uppercase;
 }
 
@@ -5228,22 +5211,18 @@ hr {
 }
 
 .nav-primary {
-  border-left: solid #E2DFE6 2px;
   display: table;
+  width: 100%;
+  background-color: #ECEBE6;
 }
-
 .nav-primary-label {
-  border-left: solid 1px;
-  height: 120px;
   padding-top: 20px;
   color: #8D825F;
-  font-family: 'Droid serif', serif;
   font-weight: bold;
 }
 
 
 .nav-primary-list {
-  border-left: solid #8D825F 1px;
   margin-bottom: 0px
 }
 .nav-primary-list.intro-ul {
@@ -5252,7 +5231,10 @@ hr {
 
 li.nav-primary-li {
   text-align: center;
-  padding:0
+  padding:0;
+  border-left: 1px solid #E2DFD6;
+  border-right: 1px solid #E2DFD6;
+  position:relative
 }
 
 li.nav-primary-li a {
@@ -5273,6 +5255,27 @@ li.nav-primary-li a:focus {
 li.nav-primary-li .title {
   padding-top: 10px;  
   font-weight: bold
+}
+
+.nav-primary-li .arrow, 
+.nav-primary-li .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.nav-primary-li.active .arrow {
+  border-width: 11px;
+}
+
+.nav-primary-li.active .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #fff;
+  border-bottom-width: 0;
 }
 .share-modal {
   position: fixed;
