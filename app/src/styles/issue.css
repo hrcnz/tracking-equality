@@ -49,7 +49,7 @@ li.last {
 .hrc-list-item-cell-title {
   padding-top: 8px;
   padding-bottom: 1em;
-  font-size: 12pt helvetica, arial, sans-serif;
+  font-size: 12pt;
 }
 
 .indicator-preview-tile{
@@ -58,7 +58,9 @@ li.last {
   margin-bottom:50px;
   padding:15px;
 }
-
+.indicator-preview-tile:hover {
+  background: white;
+}
 .date p {
   font-weight: bold;
 }
@@ -88,6 +90,92 @@ li.last {
   margin-left: 10px;
 }
 
-.indicator-preview-header{
-  min-height:60px;
+.indicator-preview-header {
+  min-height: 70px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  color: #39393C;
+  margin-bottom: 12px;
+}
+
+
+
+.indicator-preview-tile .horizontal-bar-wrap {
+  position: relative;
+  padding: 5px 0;      
+  height:30px;
+  border-left: 2px solid black
+}
+.horizontal-bar-wrap-top {
+  margin-bottom : 12px;      
+}
+    
+.horizontal-bar-bg {
+  background:#fff
+  
+}
+.indicator-preview-tile:hover .horizontal-bar-bg {
+  background: #EDECE7;
+}       
+
+.indicator-preview-tile .horizontal-bar-label {
+  position:relative;
+  margin-left:4px;
+  left: 100%;
+  padding:0px
+}
+.indicator-preview-tile .horizontal-bar-label.align-outside {
+  background-color: #fff;
+}
+.indicator-preview-tile:hover .horizontal-bar-label.align-outside{
+  background-color: #EDECE7
+}
+.indicator-preview-tile .horizontal-bar-label.align-inside{
+    display:block;
+    position: relative;
+    left: 0;
+    margin-left: -4px;
+    text-align:right;
+    background-color:transparent;
+    width:100%;
+    color: #fff;
+}
+.reference-group .vertical-line-label {
+  height: 73px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 11px;
+  padding-left: 5px;
+}
+.vertical-line-wrap {
+  display:block;
+  position:absolute;
+  height:73px;
+  top:0;
+  width: 100%;
+  z-index: 9       
+ }
+.vertical-line{
+  position:relative;
+  height:73px;
+  border-left:1px solid black
+}
+.vertical-line-label-value{
+  font-weight:bold;
+  padding-right:5px
+}
+.preview-chart {
+  position:relative
+}
+.indicator-preview-tile .group-label-title{
+  font-weight:bold
+}
+
+
+.top-group-label {
+  margin-bottom: 8px;
+}
+.bottom-group-label {
+  margin-top: 8px;
 }
