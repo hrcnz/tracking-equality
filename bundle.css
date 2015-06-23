@@ -4430,34 +4430,41 @@ td.breakdown-column-header {
 .chart-table td.group-label-range {
   font-weight:bold
 }  
-
-.range-wrapper .gap{
-  background-color: #BFBDB7; 
-  height: 3px; 
-  position: absolute;
-  margin-top: -4px;
-  top: 100%
-              
-}
-
 td.key {
   width: 1%;
 }
+.range-wrapper .gap {
+  background-color: #BFBDB7;
+  height: 4px;
+  position: absolute;
+  margin-top: -2px;
+  top: 100%;
+}
+
+
 .range-wrapper .range-icon {
   border: 4px solid black;
   border-radius: 4px;
   width: 0;
   position: absolute;
   top: 100%;
-  margin-top: -7px;
+  margin-top: -4px;
   margin-left: -2px;
 }
-
+.bottom-label-wrap {
+  position: absolute;
+  bottom: 0;
+}
+.top-label-wrap {
+  position: absolute;
+  top: 0;
+}
 .gap-label.label-min {
-  position:absolute;
+  position: absolute;
   left: 0;
   white-space: nowrap;
-  margin-left:-2px;
+  margin-left: -2px;
+  bottom: 0;
 }
 .gap-label .label-value {
   font-weight: bold;
@@ -4472,17 +4479,18 @@ td.key {
   position:absolute;
   right: 100%;
   white-space: nowrap;
-  margin-right:-7px;     
+  margin-right:-7px;    
+  top:0
 }
 .gap-label.label-max .label-value {
   padding-left:4px;
 }
 
-td.group-label-range-top{
-  vertical-align:top
-}
-td.group-label-range-bottom {
+td.group-label.group-label-range.group-label-range-bottom {
   vertical-align:bottom
+}
+td.group-label.group-label-range.group-label-range-top {
+  vertical-align: top;
 }
 
 .chart-table > tbody > tr.table-row.spacer > td {
@@ -4506,7 +4514,7 @@ tr.table-header-groups {
   vertical-align: bottom !important;
 }
 td.sort-by-control {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 td.sort-by-control .sort-label,
@@ -4525,10 +4533,34 @@ td.sort-by-control ul.sort-options li:last-child{
   border-right: 0;
 }
 
+.line-chart-header {
+  margin-bottom: 15px;
+}
+.line-chart-key {
+  position: relative;
+}
+.line-chart-key-primary {
+  border-bottom: 1px solid #B1AEA3;
+  height:60px;
+}
+.line-chart-key-secondary {
+  height: 30px;
+}
 .key .key-wrapper {
   min-width:200px;
   text-align:right;
-  display:table
+  display:table;
+
+}
+.line-chart-header .key .key-wrapper {
+  position: absolute;
+  bottom: 5px;
+  right: 0;  
+}
+.line-chart-key-secondary.key .key-wrapper {
+  top:5px;
+  bottom: initial;
+ 
 }
 .key .key-top,
 .key .key-bottom {
@@ -4551,14 +4583,6 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 .breakdown-column-header {
   min-width: 100px;
-}
-
-.line-chart-header {
-  margin-bottom: 15px;
-}
-.line-chart-key-primary {
-  border-bottom: 1px solid #B1AEA3;
-  height:60px;
 }
 
 
@@ -4679,15 +4703,22 @@ td.chart-title {
   margin-bottom: 10px;
 }
 .date-filter-group a.btn {
-  background-color: #EDECE7;
+  background-color: #D3CFC1;
   border-radius: 0;
   text-align: left;
   padding: 5px 10px 10px;
   width: 100px;
+  margin-right: 2px;
 }
+.date-filter-group a.btn:hover,
+.date-filter-group a.btn:focus,
+.date-filter-group a.btn:active,
 .date-filter-group a.btn.active {
   background-color: #7F7C6F;
   color:#fff
+}
+.date-filter-group a.btn.active {
+  cursor:default
 }
 .date-filter-label {
   font-weight: bold;
@@ -4771,20 +4802,30 @@ td.chart-title {
 .filter-group-clear-all {
   margin-top: 7px;
 }
-
+.filter-group-btn-list-button:focus,
 .filter-group-btn-list-button {
   margin-top: 4px !important;
-  background-color: #ECEBE6;
   border: none;
   border-top-left-radius: 5px !important;
   border-top-right-radius: 5px !important;
   border-bottom-left-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
+  background-color: #D3CFC1;
+  color: #605D50;
+  text-align: left;
+  font-size: 14px;
 }
 
-.filter-group-btn-list-button.active {
+.filter-group-btn-list-button.active, 
+.filter-group-btn-list-button.active:hover, 
+.filter-group-btn-list-button:active:hover, 
+.filter-group-btn-list-button:active:focus, 
+.filter-group-btn-list-button.active:focus, 
+.filter-group-btn-list-button.active:active, 
+.filter-group-btn-list-button:active, 
+.filter-group-btn-list-button:hover {
   background-color: #7E7B6E;
-  color:white
+  color: white;
 }
 
 .groups-footnotes {
@@ -4819,12 +4860,22 @@ td.chart-title {
   color: #8D825F;
 }
 
-a.dumpark-link {
-  color: #E2DFD6;
+.hrc-footer-item {
+  vertical-align: top;
+  min-height: 180px;
+}
+
+a.builtby {
+  color: #C2C0BA;
+  position: absolute;
+  bottom: 10px;
 }
 
 footer h4 {
   text-transform: none;
+}
+.hrc-footer-brand-logo {
+  text-align: right;
 }/*navbar*/
 .navbar-tew > .container {
   width: 100%;
@@ -4980,7 +5031,7 @@ li.last {
 .hrc-list-item-cell-title {
   padding-top: 8px;
   padding-bottom: 1em;
-  font-size: 12pt helvetica, arial, sans-serif;
+  font-size: 12pt;
 }
 
 .indicator-preview-tile{
@@ -4989,7 +5040,9 @@ li.last {
   margin-bottom:50px;
   padding:15px;
 }
-
+.indicator-preview-tile:hover {
+  background: white;
+}
 .date p {
   font-weight: bold;
 }
@@ -5019,10 +5072,95 @@ li.last {
   margin-left: 10px;
 }
 
-.indicator-preview-header{
-  min-height:60px;
+.indicator-preview-header {
+  min-height: 70px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  color: #39393C;
+  margin-bottom: 12px;
 }
-/*own style overrides*/
+
+
+
+.indicator-preview-tile .horizontal-bar-wrap {
+  position: relative;
+  padding: 5px 0;      
+  height:30px;
+  border-left: 2px solid black
+}
+.horizontal-bar-wrap-top {
+  margin-bottom : 12px;      
+}
+    
+.horizontal-bar-bg {
+  background:#fff
+  
+}
+.indicator-preview-tile:hover .horizontal-bar-bg {
+  background: #EDECE7;
+}       
+
+.indicator-preview-tile .horizontal-bar-label {
+  position:relative;
+  margin-left:4px;
+  left: 100%;
+  padding:0px
+}
+.indicator-preview-tile .horizontal-bar-label.align-outside {
+  background-color: #fff;
+}
+.indicator-preview-tile:hover .horizontal-bar-label.align-outside{
+  background-color: #EDECE7
+}
+.indicator-preview-tile .horizontal-bar-label.align-inside{
+    display:block;
+    position: relative;
+    left: 0;
+    margin-left: -4px;
+    text-align:right;
+    background-color:transparent;
+    width:100%;
+    color: #fff;
+}
+.reference-group .vertical-line-label {
+  height: 73px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 11px;
+  padding-left: 5px;
+}
+.vertical-line-wrap {
+  display:block;
+  position:absolute;
+  height:73px;
+  top:0;
+  width: 100%;
+  z-index: 9       
+ }
+.vertical-line{
+  position:relative;
+  height:73px;
+  border-left:1px solid black
+}
+.vertical-line-label-value{
+  font-weight:bold;
+  padding-right:5px
+}
+.preview-chart {
+  position:relative
+}
+.indicator-preview-tile .group-label-title{
+  font-weight:bold
+}
+
+
+.top-group-label {
+  margin-bottom: 8px;
+}
+.bottom-group-label {
+  margin-top: 8px;
+}/*own style overrides*/
 
 html,body,#app { 
   position: relative;
@@ -5070,13 +5208,11 @@ h1.hrc-title {
 }
 h1 {
   font-size: 30px;
-  line-height: 40px;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 30px;
   font-weight: bold;
   color: #B0AF9F;
   text-transform:uppercase;
@@ -5084,7 +5220,6 @@ h2 {
 
 h3 {
   font-size: 26px;
-  line-height: 34px;
 }
 
 h4 {
@@ -5113,7 +5248,7 @@ h6 {
 }
 
 .sources h6 {
-  text-transform:normal;
+  text-transform:none;
 }
 .serif {
   font-family: 'Droid serif', serif;
@@ -5162,6 +5297,10 @@ hr {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+.container {
+  position:relative
 }.hrc-nav-carousel a {
   text-align: center;
   color: #8D825F;
@@ -5408,11 +5547,11 @@ a:hover .icon-leadership,
 .icon-barchart        {background-position: 0px -900px }
 a:hover .icon-barchart,
 .icon-barchart:hover
-                      {background-position: -50px -900px }
+                      {background-position: 0px -900px }
 .icon-linechart       {background-position: 0px -950px }
 a:hover .icon-linechart,
 .icon-linechart:hover
-                      {background-position: -50px -950px }
+                      {background-position: 0px -950px }
                       
 .icon-menu            {background-position: 0px -1000px }
 .icon-menu-open       {background-position: -50px -1000px }
@@ -5423,20 +5562,19 @@ a:hover .icon-linechart,
 
 .icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 32px; }
 a:hover .icon-timeline,
-.icon-timeline:hover
+.icon-timeline:hover,
+a.active .icon-timeline,
+.icon-timeline.active
                       {background-position: -100px -1200px }
-.active .icon-timeline,
-.active.icon-timeline
-                      {background-position: -200px -1200px }
                       
                       
 .icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 32px; }
 a:hover .icon-snapshot,
-.icon-snapshot:hover
-                      {background-position: -200px -1250px }
-.active .icon-snapshot,
-.active.icon-snapshot
+.icon-snapshot:hover,
+a.active .icon-snapshot,
+.icon-snapshot.active
                       {background-position: -100px -1250px }
+
 .icon-arrow-up-sm     {background-position: 0px -1300px }
 .icon-arrow-down-sm   {background-position: -50px -1300px }
 .icon-hrc-logo-claim  {background-position: 0px -1350px;  
