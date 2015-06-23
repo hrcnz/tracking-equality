@@ -46,13 +46,11 @@ h1.hrc-title {
 }
 h1 {
   font-size: 30px;
-  line-height: 40px;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 30px;
   font-weight: bold;
   color: #B0AF9F;
   text-transform:uppercase;
@@ -60,7 +58,6 @@ h2 {
 
 h3 {
   font-size: 26px;
-  line-height: 34px;
 }
 
 h4 {
