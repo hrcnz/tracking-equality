@@ -19,34 +19,41 @@ td.breakdown-column-header {
 .chart-table td.group-label-range {
   font-weight:bold
 }  
-
-.range-wrapper .gap{
-  background-color: #BFBDB7; 
-  height: 3px; 
-  position: absolute;
-  margin-top: -4px;
-  top: 100%
-              
-}
-
 td.key {
   width: 1%;
 }
+.range-wrapper .gap {
+  background-color: #BFBDB7;
+  height: 4px;
+  position: absolute;
+  margin-top: -2px;
+  top: 100%;
+}
+
+
 .range-wrapper .range-icon {
   border: 4px solid black;
   border-radius: 4px;
   width: 0;
   position: absolute;
   top: 100%;
-  margin-top: -7px;
+  margin-top: -4px;
   margin-left: -2px;
 }
-
+.bottom-label-wrap {
+  position: absolute;
+  bottom: 0;
+}
+.top-label-wrap {
+  position: absolute;
+  top: 0;
+}
 .gap-label.label-min {
-  position:absolute;
+  position: absolute;
   left: 0;
   white-space: nowrap;
-  margin-left:-2px;
+  margin-left: -2px;
+  bottom: 0;
 }
 .gap-label .label-value {
   font-weight: bold;
@@ -61,17 +68,18 @@ td.key {
   position:absolute;
   right: 100%;
   white-space: nowrap;
-  margin-right:-7px;     
+  margin-right:-7px;    
+  top:0
 }
 .gap-label.label-max .label-value {
   padding-left:4px;
 }
 
-td.group-label-range-top{
-  vertical-align:top
-}
-td.group-label-range-bottom {
+td.group-label.group-label-range.group-label-range-bottom {
   vertical-align:bottom
+}
+td.group-label.group-label-range.group-label-range-top {
+  vertical-align: top;
 }
 
 .chart-table > tbody > tr.table-row.spacer > td {
@@ -95,7 +103,7 @@ tr.table-header-groups {
   vertical-align: bottom !important;
 }
 td.sort-by-control {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 td.sort-by-control .sort-label,
@@ -114,10 +122,34 @@ td.sort-by-control ul.sort-options li:last-child{
   border-right: 0;
 }
 
+.line-chart-header {
+  margin-bottom: 15px;
+}
+.line-chart-key {
+  position: relative;
+}
+.line-chart-key-primary {
+  border-bottom: 1px solid #B1AEA3;
+  height:60px;
+}
+.line-chart-key-secondary {
+  height: 30px;
+}
 .key .key-wrapper {
   min-width:200px;
   text-align:right;
-  display:table
+  display:table;
+
+}
+.line-chart-header .key .key-wrapper {
+  position: absolute;
+  bottom: 5px;
+  right: 0;  
+}
+.line-chart-key-secondary.key .key-wrapper {
+  top:5px;
+  bottom: initial;
+ 
 }
 .key .key-top,
 .key .key-bottom {
@@ -140,14 +172,6 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 .breakdown-column-header {
   min-width: 100px;
-}
-
-.line-chart-header {
-  margin-bottom: 15px;
-}
-.line-chart-key-primary {
-  border-bottom: 1px solid #B1AEA3;
-  height:60px;
 }
 
 

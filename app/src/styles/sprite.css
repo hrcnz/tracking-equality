@@ -68,11 +68,11 @@ a:hover .icon-leadership,
 .icon-barchart        {background-position: 0px -900px }
 a:hover .icon-barchart,
 .icon-barchart:hover
-                      {background-position: -50px -900px }
+                      {background-position: 0px -900px }
 .icon-linechart       {background-position: 0px -950px }
 a:hover .icon-linechart,
 .icon-linechart:hover
-                      {background-position: -50px -950px }
+                      {background-position: 0px -950px }
                       
 .icon-menu            {background-position: 0px -1000px }
 .icon-menu-open       {background-position: -50px -1000px }
@@ -83,20 +83,19 @@ a:hover .icon-linechart,
 
 .icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 32px; }
 a:hover .icon-timeline,
-.icon-timeline:hover
+.icon-timeline:hover,
+a.active .icon-timeline,
+.icon-timeline.active
                       {background-position: -100px -1200px }
-.active .icon-timeline,
-.active.icon-timeline
-                      {background-position: -200px -1200px }
                       
                       
 .icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 32px; }
 a:hover .icon-snapshot,
-.icon-snapshot:hover
-                      {background-position: -200px -1250px }
-.active .icon-snapshot,
-.active.icon-snapshot
+.icon-snapshot:hover,
+a.active .icon-snapshot,
+.icon-snapshot.active
                       {background-position: -100px -1250px }
+
 .icon-arrow-up-sm     {background-position: 0px -1300px }
 .icon-arrow-down-sm   {background-position: -50px -1300px }
 .icon-hrc-logo-claim  {background-position: 0px -1350px;  

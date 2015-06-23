@@ -2,15 +2,22 @@
   margin-bottom: 10px;
 }
 .date-filter-group a.btn {
-  background-color: #EDECE7;
+  background-color: #D3CFC1;
   border-radius: 0;
   text-align: left;
   padding: 5px 10px 10px;
   width: 100px;
+  margin-right: 2px;
 }
+.date-filter-group a.btn:hover,
+.date-filter-group a.btn:focus,
+.date-filter-group a.btn:active,
 .date-filter-group a.btn.active {
   background-color: #7F7C6F;
   color:#fff
+}
+.date-filter-group a.btn.active {
+  cursor:default
 }
 .date-filter-label {
   font-weight: bold;
