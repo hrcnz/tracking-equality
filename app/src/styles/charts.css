@@ -1,4 +1,4 @@
-.chart-table > thead > tr.table-header-groups > td {
+chart-table > thead > tr.table-header-groups > td {
   padding-left: 0;
   padding-right: 0;
 }
@@ -210,4 +210,14 @@ td.sort-by-control ul.sort-options li:last-child{
 
 td.chart-title {
   font-weight: bold;
+}
+
+.line-chart-hint {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  opacity: 0.4;
+  color: #7E7B6E;
+  margin-top: 20px;
+  padding-left: 50px;
 }
