@@ -15,23 +15,6 @@
   margin-bottom: 20px;
 }
 
-.intro-issue-select {
-  width: 100%;
-  background-color: #ECEBE6;
-}
-
-.intro-ul {
-  margin-bottom: 0px;
-}
-
-.intro-li {
-  border-left: solid #E2DFD6 2px;
-}
-
-.intro-li.last {
-  border-right: solid #E2DFD6 2px;
-}
-
 .intro-read-more {
   margin-top: 20px;
 }
