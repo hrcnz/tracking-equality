@@ -1,23 +1,18 @@
-.intro-serif {
-  font-family: 'Droid serif', serif;
-  text-transform: none;
-}
 
 .intro-lead {
-  font-size: 18px;
-}
-
-.intro-sub-lead {
   font-size: 16px;
 }
 
-.intro-text {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.intro-sub-lead {
+  font-size: 14px;
 }
 
-.intro-text p {
-  padding-top: 30px;
+.intro-content {
+  margin: 60px 30px 30px;
+}
+
+.intro-content p {
+  margin-bottom: 20px;
 }
 
 .intro-issue-select {
@@ -38,5 +33,5 @@
 }
 
 .intro-read-more {
-  padding-top: 30px;
+  margin-top: 20px;
 }

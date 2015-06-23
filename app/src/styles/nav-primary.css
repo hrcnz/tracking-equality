@@ -27,9 +27,13 @@
   font-weight: bold;
 }
 
+
 .nav-primary-list {
   border-left: solid #8D825F 1px;
   margin-bottom: 0px
+}
+.nav-primary-list.intro-ul {
+  border-left:0
 }
 
 li.nav-primary-li {
@@ -45,7 +49,10 @@ li.nav-primary-li a {
   display: block;
 }
 
-li.nav-primary-li.active {
+li.nav-primary-li.active a, 
+li.nav-primary-li a:hover, 
+li.nav-primary-li a:active, 
+li.nav-primary-li a:focus {
   background-color: white;
 }
 
