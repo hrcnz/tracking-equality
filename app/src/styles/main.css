@@ -140,3 +140,8 @@ hr {
 .container {
   position:relative
 }
+
+
+.page-content {
+  padding-top:66px;
+}
