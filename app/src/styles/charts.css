@@ -262,3 +262,8 @@ td.chart-title {
   margin-top: 20px;
   padding-left: 50px;
 }
+
+.line-chart-ylabel {
+  font-size: 13px;
+  line-height: 16px;
+}

@@ -22,13 +22,19 @@
 
 }
 
-.share-modal-social {
-  padding: 0;
+.btn.share-modal-social {
+  padding: 0px 7px;
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px;
-  background-color: #8D825F;
-  color: white;
+}
+.btn.share-modal-social,
+.btn.share-modal-social:focus {
+  background-color: #7E7B6E;
+  color: white;  
+}
+.btn.share-modal-social:hover {
+  background-color: #3F3E38;
 }
 
 .share-modal-social span {
