@@ -16,7 +16,10 @@ footer.hrc-footer {
     padding: 30px 26px 0
 }
 
-
+.hrc-footer-item p {
+  font-size: 14px;
+  margin: 0
+} 
 .hrc-footer-item a {
   color: #8D825F;
 }

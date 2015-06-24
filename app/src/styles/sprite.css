@@ -60,14 +60,15 @@ a:hover .icon-leadership,
 .icon-information     {background-position: 0px -800px }
 .icon-arrow-right-sm  {background-position: 0px -850px }
 
-.icon-barchart        {background-position: 0px -900px }
+.icon-barchart        {background-position: 0px -900px;width: 30px;height: 21px; }
 a:hover .icon-barchart,
 .icon-barchart:hover
                       {background-position: 0px -900px }
-.icon-linechart       {background-position: 0px -950px }
+.icon-linechart       {background-position: 0px -950px;width: 30px;height: 21px; }
 a:hover .icon-linechart,
 .icon-linechart:hover
-                      {background-position: 0px -950px }
+                      {background-position: 0px -950px;
+                      }
                       
 .icon-menu            {background-position: 0px -1000px }
 .icon-menu-open       {background-position: -50px -1000px }
