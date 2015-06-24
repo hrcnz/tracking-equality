@@ -137,7 +137,7 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 .line-chart-key-primary {
   border-bottom: 1px solid #B1AEA3;
-  height:60px;
+  height:61px;
 }
 .line-chart-key-secondary {
   height: 30px;
@@ -150,13 +150,14 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 .line-chart-header .key .key-wrapper {
   position: absolute;
-  bottom: 5px;
-  right: 0;  
+  bottom: 0;
+  right: 1px;  
+  padding:8px
 }
 .line-chart-key-secondary.key .key-wrapper {
-  top:5px;
+  top:0;
   bottom: initial;
- 
+   right: 2px;
 }
 .key .key-top,
 .key .key-bottom {
@@ -202,6 +203,10 @@ td.sort-by-control ul.sort-options li:last-child{
 
 .line-label .inner {
   position: absolute;
+  -ms-transform: translate(-50%,-100%);
+  -webkit-transform: translate(-50%,-100%);
+  -moz-transform: translate(-50%,-100%);
+  -o-transform: translate(-50%,-100%);
   transform: translate(-50%,-100%);
   padding: 1px;
   margin-top: -4px;
@@ -218,6 +223,10 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 
 .date-axis-label .inner{
+  -ms-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);  
   transform: translate(-50%,0);
 }
 
@@ -234,6 +243,10 @@ td.sort-by-control ul.sort-options li:last-child{
   right: 10px;
 }
 .value-axis-label .inner {
+  -ms-transform: translate(0,-50%);
+  -webkit-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  -o-transform: translate(0,-50%);
   transform: translate(0,-50%);
   position:relative;
   right:17px

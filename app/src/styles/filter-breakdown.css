@@ -3,20 +3,12 @@
   margin-top: 3px;
   border: none;
   padding: 7px 10px;
-  background-color: #D3CFC1;
-  color: #8D825F;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
 
-.hrc-filter a.hrc-list-group-item.active, 
-.hrc-filter a.hrc-list-group-item:hover, 
-.hrc-filter a.hrc-list-group-item.active:focus {
-  background-color: #7E7B6E;
-  color: white;
-}
 .filter-breakdown-title {
   font-weight: bold;
   color: #B7B4AA;

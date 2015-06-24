@@ -7,11 +7,6 @@
   vertical-align: middle;
 }
 
-/*.icon-big{
-  zoom:2;
-  -moz-transform:scale(2);
-  -moz-transform-origin: 0 0;
-}*/
 
 /* icons */
 .icon-hrc-logo-sm {
@@ -80,18 +75,17 @@ a:hover .icon-linechart,
 .icon-social-facebook {background-position: 0px -1050px }
 .icon-social-linkedin {background-position: 0px -1100px }
 .icon-social-twitter  {background-position: 0px -1150px }
-
-.icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 32px; }
 a:hover .icon-timeline,
 .icon-timeline:hover,
+.icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 32px; }
+
 a.active .icon-timeline,
 .icon-timeline.active
                       {background-position: -100px -1200px }
                       
-                      
-.icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 32px; }
 a:hover .icon-snapshot,
-.icon-snapshot:hover,
+.icon-snapshot:hover,                      
+.icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 32px; }
 a.active .icon-snapshot,
 .icon-snapshot.active
                       {background-position: -100px -1250px }
@@ -115,7 +109,7 @@ a.active .icon-snapshot,
     only screen and (min-device-pixel-ratio: 1.5) {
 
   [class^="icon-"], [class*=" icon-"] {
-    background-image: url('../img/tew-sprite@2.png');
+    background-image: url('./img/tew-sprite@2.png');
     background-size: 200px 1650px;
   }
 }
