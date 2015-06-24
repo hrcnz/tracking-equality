@@ -40,14 +40,18 @@ li.nav-primary-li {
   position:relative
 }
 
-li.nav-primary-li a {
+li.nav-primary-li a.btn {
   width: 100%;
   text-decoration: none;
   color: #38383B;
   padding-bottom: 20px;
   display: block;
+  background-color:transparent
 }
 
+li.nav-primary-li.active a {
+  cursor:default
+}
 li.nav-primary-li.active a, 
 li.nav-primary-li a:hover, 
 li.nav-primary-li a:active, 

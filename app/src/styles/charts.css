@@ -202,6 +202,10 @@ td.sort-by-control ul.sort-options li:last-child{
 
 .line-label .inner {
   position: absolute;
+  -ms-transform: translate(-50%,-100%);
+  -webkit-transform: translate(-50%,-100%);
+  -moz-transform: translate(-50%,-100%);
+  -o-transform: translate(-50%,-100%);
   transform: translate(-50%,-100%);
   padding: 1px;
   margin-top: -4px;
@@ -218,6 +222,10 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 
 .date-axis-label .inner{
+  -ms-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);  
   transform: translate(-50%,0);
 }
 
@@ -234,6 +242,10 @@ td.sort-by-control ul.sort-options li:last-child{
   right: 10px;
 }
 .value-axis-label .inner {
+  -ms-transform: translate(0,-50%);
+  -webkit-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  -o-transform: translate(0,-50%);
   transform: translate(0,-50%);
   position:relative;
   right:17px
