@@ -5034,16 +5034,17 @@ a.indicator-preview-tile:hover {
 .indicator-preview-tile .fact h1 {
   font-size: 60px;
   margin-bottom: 6px;  
+  color:#E19900
 }
 .indicator-preview-tile .fact p {
   font-size: 17px;
-  line-height:1.33em;
-  color: #E19900;
+  line-height:1.33em;  
 }
 
 .indicator-preview-tile .date,
 a.indicator-preview-tile:hover .date {
-  color: #B0AF9F;
+  /*color: #B0AF9F;*/
+  color: #7F7C6F;
 }
 
 
