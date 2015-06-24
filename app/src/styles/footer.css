@@ -5,9 +5,6 @@ footer.hrc-footer {
 .hrc-footer-info, .hrc-footer-parentsite {
 }
 
-.hrc-footer-parentsite p {
-  padding-bottom: 10px;
-}
 
 .hrc-footer-info {
   background-color: white;
@@ -15,22 +12,15 @@ footer.hrc-footer {
 
 .hrc-footer-item {
   vertical-align: top;
-  height: 150px;
+  min-height: 180px;
+    padding: 30px 26px 0
 }
 
-.hrc-footer-item div,
-.hrc-footer-item p {
-  padding-top: 30px;
-}
 
 .hrc-footer-item a {
   color: #8D825F;
 }
 
-.hrc-footer-item {
-  vertical-align: top;
-  min-height: 180px;
-}
 
 a.builtby {
   color: #C2C0BA;

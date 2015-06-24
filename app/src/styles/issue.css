@@ -5,54 +5,51 @@
 }
 
 .issue-main {
-  padding-top: 30px;
+  margin-top: 28px;
 }
 
-.recommendations-header {
-  padding-bottom: 30px;
-}
+
 
 ul.hrc-list {
   position: relative;
   list-style: none;
   padding-left: 0px;
   padding-bottom: 60px;
+  margin-top: 28px;
+
 }
 
 li.hrc-list-item {
   vertical-align: top;
-  padding-top: 1em;
-  padding-left: 20px;
-  border-top: solid white 1px;
+  border-top: 1px solid #b0af9f;
   position: relative;
-  margin-bottom 20px
 }
 
-li.last {
-  border-bottom: solid white 1px;
+li.hrc-list-item:last-child{
+  border-bottom: 1px solid #b0af9f;
 }
 
+.hrc-list-item-cell p{
+  margin:0
+}
 .hrc-list-item-cell {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
+  padding: 19px;
 }
 
 .hrc-list-item-cell-number {
   font-weight: bold;
-  width: 60px;
-  font-size: 26px;
-}
-
-.hrc-list-item-cell-title {
-  padding-top: 8px;
-  padding-bottom: 1em;
-  font-size: 12pt;
+  width: 80px;
+  font-size: 30px;
+  text-align: right;
+  padding-left: 0;
 }
 
 .indicator-preview-tile{
   background:#EDECE7;
   display: block;
-  margin-bottom:50px;
+  margin-top: 28px;
   padding:15px;
 }
 .indicator-preview-tile:hover {

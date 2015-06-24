@@ -21,7 +21,6 @@
 .nav-primary-label {
   padding-top: 20px;
   color: #8D825F;
-  font-weight: bold;
 }
 
 
@@ -35,15 +34,17 @@
 li.nav-primary-li {
   text-align: center;
   padding:0;
-  border-left: 1px solid #E2DFD6;
-  border-right: 1px solid #E2DFD6;
+  border-left: 1px solid #E2DFD6;  
   position:relative
+}
+li.nav-primary-li:last-child { 
+  border-right: 1px solid #E2DFD6;
 }
 
 li.nav-primary-li a.btn {
   width: 100%;
   text-decoration: none;
-  color: #38383B;
+  color: #595850;
   padding-bottom: 20px;
   display: block;
   background-color:transparent
@@ -53,7 +54,8 @@ li.nav-primary-li.active a,
 li.nav-primary-li a:hover, 
 li.nav-primary-li a:active, 
 li.nav-primary-li a:focus {
-  background-color: white;
+  background-color: white;  
+  color: #3F3E38;
 }
 
 li.nav-primary-li .title {

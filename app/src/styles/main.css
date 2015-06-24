@@ -13,7 +13,7 @@ body {
 .home {
   position: relative;
   min-height: 100%;
-  padding-bottom: 250px;
+  padding-bottom: 212px;
   border-left: 12px solid #363636; 
 }
 
@@ -26,13 +26,14 @@ footer.hrc-footer {
   min-height: 180px;
 }
 p {
-  font-size:14px;
-  line-height:1.44em;
+  font-size:15px;
+  line-height:1.5em;
+  margin: 0 0 16px
 }
 .small p,
 p .small,
 p.small {
-  font-size:12px;
+  font-size:13px;
   line-height:1.5em;
 }
 h1.hrc-title {
@@ -40,13 +41,14 @@ h1.hrc-title {
   color: white;
   font-size: 26px;
   line-height: 34px;  
+  margin-bottom: 4px;
 }
 .intro h1 {
   font-size: 28px;
   margin-bottom: 25px
 }
 h1 {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: bold;
 }
 
@@ -62,7 +64,7 @@ h3 {
 }
 
 h4 {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   color: #8D825F;
@@ -77,6 +79,10 @@ h5 {
   font-weight: bold;
   text-transform:uppercase;
   color: #7F7C6F
+}
+.issue-header  h5 {
+  font-size:13px;
+  margin-bottom:6px
 }
 
 h6 {
@@ -108,8 +114,11 @@ button,a {
 a{
   color: #8D825F;
 }
+p a {
+  font-weight:bold;
+}
 a:hover {
-  color: #38383B;
+  color: #756a4a;
 }
 a:hover,a:focus{
   text-decoration:none
@@ -202,10 +211,10 @@ hr {
 
 
 .page-content {
-  padding-top:50px;
+  padding-top:30px;
 }
 
 .page-section {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
