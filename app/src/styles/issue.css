@@ -59,15 +59,14 @@ li.hrc-list-item:last-child{
   display: block;
   margin-top: 28px;
   padding:20px;
+  color:#7f7c6f
 }
 
 a.indicator-preview-tile:hover {
   background: #fff; 
   color: #8D825F;
 }
-.indicator-preview-tile .date {
-  font-weight: bold;
-}
+
 
 .indicator-preview-tile .fact h1,
 .indicator-preview-tile .fact p {
@@ -82,11 +81,12 @@ a.indicator-preview-tile:hover {
   font-size: 17px;
   line-height:1.33em;  
 }
-
+.indicator-preview-tile .date {
+  font-weight: bold;
+}
 .indicator-preview-tile .date,
 a.indicator-preview-tile:hover .date {
-  /*color: #B0AF9F;*/
-  color: #7F7C6F;
+  color: #E19900;  
 }
 
 
