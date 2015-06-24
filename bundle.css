@@ -4543,7 +4543,7 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 .line-chart-key-primary {
   border-bottom: 1px solid #B1AEA3;
-  height:60px;
+  height:61px;
 }
 .line-chart-key-secondary {
   height: 30px;
@@ -4556,13 +4556,14 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 .line-chart-header .key .key-wrapper {
   position: absolute;
-  bottom: 5px;
-  right: 0;  
+  bottom: 0;
+  right: 1px;  
+  padding:8px
 }
 .line-chart-key-secondary.key .key-wrapper {
-  top:5px;
+  top:0;
   bottom: initial;
- 
+   right: 2px;
 }
 .key .key-top,
 .key .key-bottom {
@@ -4793,7 +4794,7 @@ td.chart-title {
 }
 .filter-group-title h6 {
   display: inline-block;
-  color: #38383B;
+  color: #595850;
 }
 .filter-group-title a {
   position: absolute;
@@ -4825,9 +4826,6 @@ td.chart-title {
 .hrc-footer-info, .hrc-footer-parentsite {
 }
 
-.hrc-footer-parentsite p {
-  padding-bottom: 10px;
-}
 
 .hrc-footer-info {
   background-color: white;
@@ -4835,22 +4833,15 @@ td.chart-title {
 
 .hrc-footer-item {
   vertical-align: top;
-  height: 150px;
+  min-height: 180px;
+    padding: 30px 26px 0
 }
 
-.hrc-footer-item div,
-.hrc-footer-item p {
-  padding-top: 30px;
-}
 
 .hrc-footer-item a {
   color: #8D825F;
 }
 
-.hrc-footer-item {
-  vertical-align: top;
-  min-height: 180px;
-}
 
 a.builtby {
   color: #C2C0BA;
@@ -4873,10 +4864,9 @@ footer h4 {
   margin-bottom: 0px;
   border: 0;
   border-radius: 0;   
-  padding: 0 20px;
 }
 .header-logo.navbar-brand {
-  padding: 25px;
+  padding: 27px 25px;
 }
 .header-claim {
   padding: 36px 25px;
@@ -4886,7 +4876,7 @@ footer h4 {
 }
 
 .navbar-tew .header-logo {
-  height: 98px;
+  height: 100px;
   border-right: 1px solid #535148;
 }
 .header-intro .navbar-tew .header-logo {
@@ -4970,54 +4960,51 @@ li.hrc-title-item .hrc-subtitle {
 }
 
 .issue-main {
-  padding-top: 30px;
+  margin-top: 28px;
 }
 
-.recommendations-header {
-  padding-bottom: 30px;
-}
+
 
 ul.hrc-list {
   position: relative;
   list-style: none;
   padding-left: 0px;
   padding-bottom: 60px;
+  margin-top: 28px;
+
 }
 
 li.hrc-list-item {
   vertical-align: top;
-  padding-top: 1em;
-  padding-left: 20px;
-  border-top: solid white 1px;
+  border-top: 1px solid #b0af9f;
   position: relative;
-  margin-bottom 20px
 }
 
-li.last {
-  border-bottom: solid white 1px;
+li.hrc-list-item:last-child{
+  border-bottom: 1px solid #b0af9f;
 }
 
+.hrc-list-item-cell p{
+  margin:0
+}
 .hrc-list-item-cell {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
+  padding: 19px;
 }
 
 .hrc-list-item-cell-number {
   font-weight: bold;
-  width: 60px;
-  font-size: 26px;
-}
-
-.hrc-list-item-cell-title {
-  padding-top: 8px;
-  padding-bottom: 1em;
-  font-size: 12pt;
+  width: 80px;
+  font-size: 30px;
+  text-align: right;
+  padding-left: 0;
 }
 
 .indicator-preview-tile{
   background:#EDECE7;
   display: block;
-  margin-bottom:50px;
+  margin-top: 28px;
   padding:15px;
 }
 .indicator-preview-tile:hover {
@@ -5155,7 +5142,7 @@ body {
 .home {
   position: relative;
   min-height: 100%;
-  padding-bottom: 250px;
+  padding-bottom: 212px;
   border-left: 12px solid #363636; 
 }
 
@@ -5168,13 +5155,14 @@ footer.hrc-footer {
   min-height: 180px;
 }
 p {
-  font-size:14px;
-  line-height:1.44em;
+  font-size:15px;
+  line-height:1.5em;
+  margin: 0 0 16px
 }
 .small p,
 p .small,
 p.small {
-  font-size:12px;
+  font-size:13px;
   line-height:1.5em;
 }
 h1.hrc-title {
@@ -5182,13 +5170,14 @@ h1.hrc-title {
   color: white;
   font-size: 26px;
   line-height: 34px;  
+  margin-bottom: 4px;
 }
 .intro h1 {
   font-size: 28px;
   margin-bottom: 25px
 }
 h1 {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: bold;
 }
 
@@ -5204,7 +5193,7 @@ h3 {
 }
 
 h4 {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   color: #8D825F;
@@ -5219,6 +5208,10 @@ h5 {
   font-weight: bold;
   text-transform:uppercase;
   color: #7F7C6F
+}
+.issue-header  h5 {
+  font-size:13px;
+  margin-bottom:6px
 }
 
 h6 {
@@ -5250,8 +5243,11 @@ button,a {
 a{
   color: #8D825F;
 }
+p a {
+  font-weight:bold;
+}
 a:hover {
-  color: #38383B;
+  color: #756a4a;
 }
 a:hover,a:focus{
   text-decoration:none
@@ -5344,11 +5340,11 @@ hr {
 
 
 .page-content {
-  padding-top:50px;
+  padding-top:30px;
 }
 
 .page-section {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 40px;
 }.hrc-nav-carousel a.btn {
   text-align: center;
@@ -5410,7 +5406,6 @@ hr {
 .nav-primary-label {
   padding-top: 20px;
   color: #8D825F;
-  font-weight: bold;
 }
 
 
@@ -5424,15 +5419,17 @@ hr {
 li.nav-primary-li {
   text-align: center;
   padding:0;
-  border-left: 1px solid #E2DFD6;
-  border-right: 1px solid #E2DFD6;
+  border-left: 1px solid #E2DFD6;  
   position:relative
+}
+li.nav-primary-li:last-child { 
+  border-right: 1px solid #E2DFD6;
 }
 
 li.nav-primary-li a.btn {
   width: 100%;
   text-decoration: none;
-  color: #38383B;
+  color: #595850;
   padding-bottom: 20px;
   display: block;
   background-color:transparent
@@ -5442,7 +5439,8 @@ li.nav-primary-li.active a,
 li.nav-primary-li a:hover, 
 li.nav-primary-li a:active, 
 li.nav-primary-li a:focus {
-  background-color: white;
+  background-color: white;  
+  color: #3F3E38;
 }
 
 li.nav-primary-li .title {
@@ -5545,7 +5543,7 @@ li.nav-primary-li .title {
 .icon-hrc-logo-sm {
   background-position: 0px 0px;
   width: 75px;
-  height: 50px;
+  height: 46px;
 }
 
 .icon-employment      {background-position: 0px -100px;  
@@ -5567,7 +5565,7 @@ a:hover .icon-discrimination,
                       {background-position: -100px -200px}
                       
 .icon-pay             {background-position: 0px -300px;  
-                       width: 80px;
+                       width: 100px;
                        height: 80px; }
 .active .icon-pay,
 .active.icon-pay,      
