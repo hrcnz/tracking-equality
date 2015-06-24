@@ -49,9 +49,6 @@ li.nav-primary-li a.btn {
   background-color:transparent
 }
 
-li.nav-primary-li.active a {
-  cursor:default
-}
 li.nav-primary-li.active a, 
 li.nav-primary-li a:hover, 
 li.nav-primary-li a:active, 

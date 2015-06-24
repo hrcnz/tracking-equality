@@ -14,8 +14,9 @@ body {
   position: relative;
   min-height: 100%;
   padding-bottom: 250px;
-  border-left: 12px solid #232326; 
+  border-left: 12px solid #363636; 
 }
+
 footer.hrc-footer {
   position: absolute;
   bottom: 0;
@@ -201,6 +202,10 @@ hr {
 
 
 .page-content {
-  padding-top:66px;
+  padding-top:50px;
 }
 
+.page-section {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}

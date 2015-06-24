@@ -22,7 +22,7 @@
 
 .navbar-tew .header-logo {
   height: 98px;
-  border-right: solid black 1px
+  border-right: 1px solid #535148;
 }
 .header-intro .navbar-tew .header-logo {
   border-right: solid black 0
