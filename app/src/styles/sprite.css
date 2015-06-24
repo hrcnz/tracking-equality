@@ -78,17 +78,21 @@ a:hover .icon-linechart,
 .icon-social-twitter  {background-position: 0px -1150px }
 a:hover .icon-timeline,
 .icon-timeline:hover,
-.icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 32px; }
+.icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 40px; }
 
 a.active .icon-timeline,
-.icon-timeline.active
+a:active .icon-timeline,
+.icon-timeline.active,
+.icon-timeline:active
                       {background-position: -100px -1200px }
                       
 a:hover .icon-snapshot,
 .icon-snapshot:hover,                      
-.icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 32px; }
+.icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 40px; }
 a.active .icon-snapshot,
-.icon-snapshot.active
+a:active .icon-snapshot,
+.icon-snapshot.active,
+.icon-snapshot:active
                       {background-position: -100px -1250px }
 
 .icon-arrow-up-sm     {background-position: 0px -1300px }

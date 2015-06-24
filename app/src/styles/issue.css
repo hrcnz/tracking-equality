@@ -47,11 +47,11 @@ li.hrc-list-item:last-child{
 }
 
 
-.indicator-preview-tile h4{
+.indicator-preview-tile h5{
   margin-bottom: 0;
 }
-.indicator-preview-tile h4,
-.indicator-preview-tile:hover h4{
+.indicator-preview-tile h5,
+.indicator-preview-tile:hover h5{
   color: #7F7C6F;
 }
 .indicator-preview-tile{

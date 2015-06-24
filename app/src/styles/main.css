@@ -57,22 +57,31 @@ h2 {
   font-weight: bold;
   color: #B0AF9F;
   text-transform:uppercase;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 26px;
+  font-weight: bold;
 }
-
+.marked-inner-html h1,
+.marked-inner-html h2,
+.marked-inner-html h3,
+.marked-inner-html h4,
+.marked-inner-html h5,
+.marked-inner-html h6 {
+  font-size: 16px;
+  font-size: 4px;
+  font-weight: bold;  
+}
 h4 {
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 16px;
   font-weight: bold;
   color: #8D825F;
   text-transform:uppercase;
 }
 h4.intro-explore {
   margin-bottom: 20px;
-  font-size: 16px;
 }
 h5 {
   font-size: 15px;
@@ -105,10 +114,10 @@ h6 {
 }
 
 button,a {
-  -webkit-transition: background-color 0.2s ease, color 0.2s ease;
-  -moz-transition: background-color 0.2s ease, color 0.2s ease;
-  -o-transition: background-color 0.2s ease, color 0.2s ease;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  -webkit-transition: background-color 0.1s ease, color 0.1s ease;
+  -moz-transition: background-color 0.1s ease, color 0.1s ease;
+  -o-transition: background-color 0.1s ease, color 0.1s ease;
+  transition: background-color 0.1s ease, color 0.1s ease;
 }
 
 a{
@@ -130,6 +139,7 @@ a:focus {
 }
 .btn.active {
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
 }
 
@@ -147,8 +157,8 @@ a:focus {
 a.list-group-item,
 .btn:focus,
 .btn {
-  background-color: #D3CFC1;
-  color: #605D50;
+  background-color: #ecebe6;
+  color: #7e7b6e;
 }
 
 .dropdown-menu > .active > a, 
@@ -163,7 +173,7 @@ a.list-group-item,
 .dropdown-menu > li > a:hover, 
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #605D50;
+  color: #7e7b6e;
   background-color: #fff;
 }
 
@@ -189,7 +199,7 @@ a.list-group-item:hover,
 .btn:focus:hover, 
 .btn:hover {
   background-color: #fff;
-  color: #605D50;
+  color: #7e7b6e;
 }
 
 
@@ -202,8 +212,7 @@ a.list-group-item:hover,
 
 
 hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0;
   border-top: 1px solid #B1AEA3;
 }
 
@@ -221,4 +230,9 @@ hr {
 .page-section {
   margin-top: 50px;
   margin-bottom: 40px;
+}
+
+.show-more {
+  margin-top: -12px;
+  font-weight: bold;
 }

@@ -22,6 +22,7 @@
   position: absolute;
   right: 0;
   top: 0;
+  font-weight:bold
 }
 .filter-group-clear-all {
   margin-top: 7px;

@@ -1,8 +1,6 @@
-
-.indicator-top {
-  padding-top: 30px;
+.indicator-title {
+  margin: 32px 0;
 }
-
 
 .indicator-bottom .sources {
   padding-top: 29px;
@@ -15,6 +13,10 @@
 
 .indicator-control {
   position: absolute;
-  top: -18px;
+  top: -21px;
   right: 15px;
+}
+
+.source {
+  margin-bottom: 10px;
 }

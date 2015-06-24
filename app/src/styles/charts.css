@@ -10,7 +10,7 @@ chart-table > thead > tr.table-header-groups > td {
 .chart-table td.group-label {  
   white-space: nowrap;
   padding-right: 20px !important;
-  color: #7F7C6F;
+  color: #595850;
   vertical-align: middle;
 }
 td.breakdown-column-header {
@@ -178,10 +178,6 @@ td.sort-by-control ul.sort-options li:last-child{
   width:15px;
   height:15px;
 }
-.breakdown-column-header {
-  min-width: 100px;
-}
-
 
 .horizontal-bar-label{
   background-color:#E3E0D7;
@@ -195,9 +191,10 @@ td.sort-by-control ul.sort-options li:last-child{
 .breakdown-column-header{
   text-transform:uppercase;
   font-size:12px;
-  color:#8D825F;
+  color:#7e7b6e;
   font-weight:bold;
   white-space: nowrap;
+  min-width: 100px;
 }
 
 

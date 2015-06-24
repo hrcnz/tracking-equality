@@ -1,3 +1,7 @@
+.hrc-nav-carousel a.btn:hover {  
+  color: #756a4a;
+ }
+
 .hrc-nav-carousel a.btn {
   text-align: center;
   color: #8D825F;

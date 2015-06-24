@@ -6,7 +6,7 @@
   text-align: left;
   padding: 5px 10px 10px;
   width: 100px;
-  margin-right: 2px;
+  margin-right: 1px;
 }
 .date-filter-group a.btn.active {
   cursor:default
@@ -68,3 +68,10 @@
   padding: 3px 10px;
 }
 
+
+.single-dataset-label {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 1px 10px;
+  color: #7E7B6E;
+}
