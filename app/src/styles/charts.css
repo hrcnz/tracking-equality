@@ -267,3 +267,7 @@ td.chart-title {
   font-size: 13px;
   line-height: 16px;
 }
+
+.horizontal-bar-label {
+  color: #E19900;
+}

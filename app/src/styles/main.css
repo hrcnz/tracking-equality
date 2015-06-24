@@ -5,6 +5,37 @@ html,body,#app {
   height: 100%;
   min-width:1024px;
 }
+.container {
+  width: 970px !important; 
+}
+  .navbar-header {
+    float: left !important;
+  }
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px !important;
+  }  
+  .navbar-nav {
+    float: left !important;
+    margin: 0 !important;
+  }
+  .navbar-nav > li {
+    float: left !important;
+  }
+  .navbar-right {
+    float: right !important;
+    margin-right: -15px !important;
+  }
+  .navbar-right ~ .navbar-right {
+    margin-right: 0 !important;
+  }
 body {
   padding: 0px;
   background-color: #E3E0D7;
@@ -16,7 +47,10 @@ body {
   padding-bottom: 212px;
   border-left: 12px solid #363636; 
 }
-
+.loading {
+  text-align:center;
+  margin: 50px 0
+}
 footer.hrc-footer {
   position: absolute;
   bottom: 0;
@@ -214,13 +248,6 @@ a.list-group-item:hover,
   color: #7e7b6e;
 }
 
-
-
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-}
 
 
 hr {
