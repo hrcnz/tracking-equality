@@ -137,7 +137,7 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 .line-chart-key-primary {
   border-bottom: 1px solid #B1AEA3;
-  height:60px;
+  height:61px;
 }
 .line-chart-key-secondary {
   height: 30px;
@@ -150,13 +150,14 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 .line-chart-header .key .key-wrapper {
   position: absolute;
-  bottom: 5px;
-  right: 0;  
+  bottom: 0;
+  right: 1px;  
+  padding:8px
 }
 .line-chart-key-secondary.key .key-wrapper {
-  top:5px;
+  top:0;
   bottom: initial;
- 
+   right: 2px;
 }
 .key .key-top,
 .key .key-bottom {
