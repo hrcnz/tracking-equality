@@ -17,7 +17,8 @@ td.breakdown-column-header {
   padding: 8px 10px 8px 0 !important;
 }
 .chart-table td.group-label-range {
-  font-weight:bold
+  font-weight:bold;
+  text-align: right;
 }  
 td.key {
   width: 1%;
@@ -52,9 +53,16 @@ td.key {
   position: absolute;
   left: 0;
   white-space: nowrap;
-  margin-left: -2px;
-  bottom: 0;
+  margin-left: -2px;  
 }
+
+.top-label.gap-label {
+  top: 0
+}
+.bottom-label.gap-label {
+  bottom: 0
+}
+
 .gap-label .label-value {
   font-weight: bold;
 }
@@ -69,7 +77,6 @@ td.key {
   right: 100%;
   white-space: nowrap;
   margin-right:-7px;    
-  top:0
 }
 .gap-label.label-max .label-value {
   padding-left:4px;
@@ -96,7 +103,7 @@ td.group-label.group-label-range.group-label-range-top {
   padding-left: 0px;
 }
 tr.table-header-groups {
-  height: 55px;
+  height: 60px;
 }
 .table-header-groups td {
   border-bottom: 1px solid #B1AEA3;
