@@ -1,6 +1,6 @@
 /*navbar*/
 .navbar-tew > .container {
-  width: 100%;
+  width: 100% !important;
 }
 
 .navbar-tew {
