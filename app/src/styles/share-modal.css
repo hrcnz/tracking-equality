@@ -1,10 +1,12 @@
-.share-modal {
+.share-modal .close-modal{
   position: fixed;
   top: 0;
   z-index: 99;
   width: 100%;
   bottom: 0;
   height: 100%;
+  background-color: #000;
+  opacity: 0.2;
 }
 
 .share-modal-inner {
