@@ -79,7 +79,8 @@ h1.hrc-title {
 }
 .intro h1 {
   font-size: 28px;
-  margin-bottom: 25px
+  margin-bottom: 25px;
+  line-height: 40px;
 }
 h1 {
   font-size: 34px;
@@ -116,11 +117,12 @@ h3 {
 h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #8D825F;
+  color: #7F7C6F;
   text-transform:uppercase;
 }
 h4.intro-explore {
   margin-bottom: 20px;
+  font-weight: normal;
 }
 h5 {
   font-size: 15px;

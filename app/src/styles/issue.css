@@ -59,14 +59,17 @@ li.hrc-list-item:last-child{
   display: block;
   margin-top: 28px;
   padding:20px;
-  color:#7f7c6f
+  color:#7f7c6f;
+  overflow:hidden;
 }
 
 a.indicator-preview-tile:hover {
   background: #fff; 
   color: #8D825F;
 }
-
+.group-label {
+  font-size: 13px;
+}
 
 .indicator-preview-tile .fact h1,
 .indicator-preview-tile .fact p {

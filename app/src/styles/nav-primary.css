@@ -20,7 +20,7 @@
 }
 .nav-primary-label {
   padding-top: 20px;
-  color: #8D825F;
+  color: #7F7C6F;
 }
 
 
@@ -52,7 +52,10 @@ li.nav-primary-li a.btn {
 
 li.nav-primary-li.active a, 
 li.nav-primary-li a:hover, 
+li.nav-primary-li.active a:hover:focus, 
+li.nav-primary-li a:hover:focus, 
 li.nav-primary-li a:active, 
+li.nav-primary-li.active a:focus,
 li.nav-primary-li a:focus {
   background-color: white;  
   color: #3F3E38;
