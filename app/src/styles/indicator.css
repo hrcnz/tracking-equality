@@ -1,20 +1,9 @@
-
-.indicator-top {
-  padding-top: 30px;
-}
-
-.indicator-chart-top {  
-  padding-top: 30px;
-}
-
-.indicator-chart {
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+.indicator-title {
+  margin: 32px 0;
 }
 
 .indicator-bottom .sources {
-  padding-top: 40px;
-  color: #7F7C6F;
+  margin-top: 59px;
 }
 
 .sources .dataset-title {
@@ -23,6 +12,10 @@
 
 .indicator-control {
   position: absolute;
-  top: -18px;
+  top: -21px;
   right: 15px;
+}
+
+.source {
+  margin-bottom: 10px;
 }

@@ -5,9 +5,10 @@
   "main": "src/app.js",
   "scripts": {
     "dev": "NODE_ENV=development npm run assets && npm run watch-css && npm run budo",
-    "build": "browserify src/app.js | uglifyjs > build/bundle.js && npm run build-css",
+    "build": "browserify src/app.js | uglifyjs > build/bundle.js && npm run min-css",
     "build-dev": "browserify src/app.js -o build/bundle.js -d  && npm run build-css",
     "assets": "cp src/index.html build/ && cp src/img/* build/img",
+    "min-css": "cat src/styles/*.css | cleancss -o build/bundle.css",
     "build-css": "cat src/styles/*.css > build/bundle.css",
     "watch-css": "./node_modules/catw/bin/cmd.js src/styles/*.css -o build/bundle.css -v",
     "ready-deploy": "npm run build && npm run assets",
@@ -39,7 +40,6 @@
   "dependencies": {
     "bootstrap": "^3.3.4",
     "d3": "^3.5.5",
-    "d3-interpolate-rgb": "0.0.0",
     "debug": "^2.1.2",
     "es5-shim": "^4.1.6",
     "fluxxor": "^1.5.2",
@@ -60,6 +60,7 @@
     "browserify": "^9.0.8",
     "budo": "^3.1.1",
     "catw": "^1.0.1",
+    "clean-css": "^3.3.3",
     "colors": "^1.0.3",
     "envify": "^3.4.0",
     "garnish": "^2.1.3",

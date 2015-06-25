@@ -1,8 +1,16 @@
-.hrc-nav-carousel a {
+.hrc-nav-carousel a.btn:hover {  
+  color: #756a4a;
+ }
+
+.hrc-nav-carousel a.btn {
   text-align: center;
   color: #8D825F;
   min-width: 50px;
   padding: 0;
+  background-color:transparent;
+}
+.hrc-nav-carousel a.btn:hover {
+  background-color:transparent;
 }
 
 .hrc-carousel-icon {

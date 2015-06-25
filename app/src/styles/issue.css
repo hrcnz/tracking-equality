@@ -5,85 +5,105 @@
 }
 
 .issue-main {
-  padding-top: 30px;
+  margin-top: 28px;
 }
 
-.recommendations-header {
-  padding-bottom: 30px;
-}
+
 
 ul.hrc-list {
   position: relative;
   list-style: none;
   padding-left: 0px;
   padding-bottom: 60px;
+  margin-top: 28px;
+
 }
 
 li.hrc-list-item {
   vertical-align: top;
-  padding-top: 1em;
-  padding-left: 20px;
-  border-top: solid white 1px;
+  border-top: 1px solid #b0af9f;
   position: relative;
-  margin-bottom 20px
 }
 
-li.last {
-  border-bottom: solid white 1px;
+li.hrc-list-item:last-child{
+  border-bottom: 1px solid #b0af9f;
 }
 
+.hrc-list-item-cell p{
+  margin:0
+}
 .hrc-list-item-cell {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
+  padding: 19px;
 }
 
 .hrc-list-item-cell-number {
   font-weight: bold;
-  width: 60px;
-  font-size: 26px;
+  width: 80px;
+  font-size: 30px;
+  text-align: right;
+  padding-left: 0;
 }
 
-.hrc-list-item-cell-title {
-  padding-top: 8px;
-  padding-bottom: 1em;
-  font-size: 12pt;
-}
 
+.indicator-preview-tile h5{
+  margin-bottom: 0;
+}
+.indicator-preview-tile h5,
+.indicator-preview-tile:hover h5{
+  color: #7F7C6F;
+}
 .indicator-preview-tile{
   background:#EDECE7;
   display: block;
-  margin-bottom:50px;
-  padding:15px;
+  margin-top: 28px;
+  padding:20px;
+  color:#7f7c6f
 }
-.indicator-preview-tile:hover {
-  background: white;
+
+a.indicator-preview-tile:hover {
+  background: #fff; 
+  color: #8D825F;
 }
-.date p {
+
+
+.indicator-preview-tile .fact h1,
+.indicator-preview-tile .fact p {
+  margin:0
+}
+.indicator-preview-tile .fact h1 {
+  font-size: 60px;
+  margin-bottom: 6px;  
+  color:#E19900
+}
+.indicator-preview-tile .fact p {
+  font-size: 17px;
+  line-height:1.33em;  
+}
+.indicator-preview-tile .date {
   font-weight: bold;
 }
-
-.preview-totals > .fact p {
-  font-size: 20px;
+.indicator-preview-tile .date,
+a.indicator-preview-tile:hover .date {
+  color: #E19900;  
 }
 
-.fact h1, .fact p {
-  color: #EDB61A;
-}
+
 
 .indicator-preview-footer{
-  border-top:solid 1px #555;
+  border-top:solid 1px #b0af9f;
   padding-top: 10px;
-  margin-top: 30px;
+  margin-top: 28px;
   margin-bottom: 0px;
+  position:relative
 }
-
-.indicator-preview-icon-wrap {
-  width: 40px;
-  height: 40px;
+.indicator-preview-icons {
+  position: absolute;
+  right: 0;
+  top: 17px;
 }
-
-.indicator-preview-icon-wrap div {
-  margin-top: 10px;
+.indicator-preview-icons span {
   margin-left: 10px;
 }
 

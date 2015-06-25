@@ -16,12 +16,13 @@
 }
 .filter-group-title h6 {
   display: inline-block;
-  color: #38383B;
+  color: #7e7b6e;
 }
 .filter-group-title a {
   position: absolute;
   right: 0;
   top: 0;
+  font-weight:bold
 }
 .filter-group-clear-all {
   margin-top: 7px;
@@ -34,22 +35,8 @@
   border-top-right-radius: 5px !important;
   border-bottom-left-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
-  background-color: #D3CFC1;
-  color: #605D50;
   text-align: left;
   font-size: 14px;
-}
-
-.filter-group-btn-list-button.active, 
-.filter-group-btn-list-button.active:hover, 
-.filter-group-btn-list-button:active:hover, 
-.filter-group-btn-list-button:active:focus, 
-.filter-group-btn-list-button.active:focus, 
-.filter-group-btn-list-button.active:active, 
-.filter-group-btn-list-button:active, 
-.filter-group-btn-list-button:hover {
-  background-color: #7E7B6E;
-  color: white;
 }
 
 .groups-footnotes {

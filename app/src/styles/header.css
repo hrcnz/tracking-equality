@@ -4,14 +4,13 @@
 }
 
 .navbar-tew {
-  background-color: #38383B;
+  background-color: #595850;
   margin-bottom: 0px;
   border: 0;
   border-radius: 0;   
-  padding: 0 20px;
 }
 .header-logo.navbar-brand {
-  padding: 25px;
+  padding: 27px 25px;
 }
 .header-claim {
   padding: 36px 25px;
@@ -21,8 +20,8 @@
 }
 
 .navbar-tew .header-logo {
-  height: 98px;
-  border-right: solid black 1px
+  height: 100px;
+  border-right: 1px solid #535148;
 }
 .header-intro .navbar-tew .header-logo {
   border-right: solid black 0
@@ -38,7 +37,7 @@ li.hrc-title-item {
 }
 
 li.hrc-title-item .hrc-subtitle {
-  color: #8D825F;
+  color: #D0CFC5;
 }
 
 .navbar-tew .navbar-right  a {

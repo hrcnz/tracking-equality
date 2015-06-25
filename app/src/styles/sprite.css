@@ -7,17 +7,12 @@
   vertical-align: middle;
 }
 
-/*.icon-big{
-  zoom:2;
-  -moz-transform:scale(2);
-  -moz-transform-origin: 0 0;
-}*/
 
 /* icons */
 .icon-hrc-logo-sm {
   background-position: 0px 0px;
   width: 75px;
-  height: 50px;
+  height: 46px;
 }
 
 .icon-employment      {background-position: 0px -100px;  
@@ -39,7 +34,7 @@ a:hover .icon-discrimination,
                       {background-position: -100px -200px}
                       
 .icon-pay             {background-position: 0px -300px;  
-                       width: 80px;
+                       width: 100px;
                        height: 80px; }
 .active .icon-pay,
 .active.icon-pay,      
@@ -58,21 +53,27 @@ a:hover .icon-leadership,
 .icon-close           {background-position: 0px -500px;  
                        width: 68px;
                         height: 68px; }
+a:hover .icon-close,
+.icon-close:hover
+                      {background-position: -100px -500px; }
 .icon-previous        {background-position: 0px -600px;  width: 13px; }
+a:hover .icon-previous, .icon-previous:hover        {background-position: -50px -600px;}
 .icon-next            {background-position: 0px -650px;  width: 13px; }
+a:hover .icon-next, .icon-next:hover        {background-position: -50px -650px;}
 .icon-li-arrow        {background-position: 0px -700px }
 .icon-li-dot          {background-position: 0px -750px }
 .icon-information     {background-position: 0px -800px }
 .icon-arrow-right-sm  {background-position: 0px -850px }
 
-.icon-barchart        {background-position: 0px -900px }
+.icon-barchart        {background-position: 0px -900px;width: 30px;height: 21px; }
 a:hover .icon-barchart,
 .icon-barchart:hover
                       {background-position: 0px -900px }
-.icon-linechart       {background-position: 0px -950px }
+.icon-linechart       {background-position: 0px -950px;width: 30px;height: 21px; }
 a:hover .icon-linechart,
 .icon-linechart:hover
-                      {background-position: 0px -950px }
+                      {background-position: 0px -950px;
+                      }
                       
 .icon-menu            {background-position: 0px -1000px }
 .icon-menu-open       {background-position: -50px -1000px }
@@ -80,20 +81,23 @@ a:hover .icon-linechart,
 .icon-social-facebook {background-position: 0px -1050px }
 .icon-social-linkedin {background-position: 0px -1100px }
 .icon-social-twitter  {background-position: 0px -1150px }
-
-.icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 32px; }
 a:hover .icon-timeline,
 .icon-timeline:hover,
+.icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 40px; }
+
 a.active .icon-timeline,
-.icon-timeline.active
+a:active .icon-timeline,
+.icon-timeline.active,
+.icon-timeline:active
                       {background-position: -100px -1200px }
                       
-                      
-.icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 32px; }
 a:hover .icon-snapshot,
-.icon-snapshot:hover,
+.icon-snapshot:hover,                      
+.icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 40px; }
 a.active .icon-snapshot,
-.icon-snapshot.active
+a:active .icon-snapshot,
+.icon-snapshot.active,
+.icon-snapshot:active
                       {background-position: -100px -1250px }
 
 .icon-arrow-up-sm     {background-position: 0px -1300px }
@@ -115,7 +119,7 @@ a.active .icon-snapshot,
     only screen and (min-device-pixel-ratio: 1.5) {
 
   [class^="icon-"], [class*=" icon-"] {
-    background-image: url('../img/tew-sprite@2.png');
-    background-size: 200px 1650px;
+    background-image: url('./img/tew-sprite@2.png');
+    background-size: 300px 1650px;
   }
 }
