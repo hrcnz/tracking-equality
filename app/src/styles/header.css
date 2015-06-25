@@ -40,22 +40,21 @@ li.hrc-title-item .hrc-subtitle {
   color: #D0CFC5;
 }
 
-.navbar-tew .navbar-right  a {
+.navbar-tew .navbar-right a {
   font-weight: bold;
-  padding-right: 30px;
-  padding-top: 30px;
+    padding: 5px 1px;
 }
 .navbar-tew.navbar-default .navbar-nav > li > a {
   color: #fff;
 }
-.navbar-tew.navbar-default .navbar-nav > .active > a, 
-.navbar-tew.navbar-default .navbar-nav > .active > a:hover, 
-.navbar-tew.navbar-default .navbar-nav > .active > a:focus {
-  color: #8D825F;
-  background: none;
+.navbar-tew.navbar-default .navbar-nav > li > a:hover{
+color: #CCCBC5;  background: none;
 }
-.navbar-tew.navbar-default .navbar-nav > li > a:hover, 
-.navbar-tew.navbar-default .navbar-nav > li > a:focus {
-  color: #8D825F;
-  background: none;
+
+.nav-group.nav-group-share {
+  padding-right:30px;
+
+}
+.nav-group {
+  padding: 34px 10px;
 }

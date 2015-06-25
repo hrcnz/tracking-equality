@@ -81,6 +81,17 @@ a:hover .icon-linechart,
 .icon-social-facebook {background-position: 0px -1050px }
 .icon-social-linkedin {background-position: 0px -1100px }
 .icon-social-twitter  {background-position: 0px -1150px }
+
+.icon-social-facebook-sm {background-position: -100px -1050px;width: 20px;
+  height: 20px;  margin-top: -5px; }
+.icon-social-share {background-position: -100px -1100px;width: 20px;
+  height: 20px;  margin-top: -5px; }
+.icon-social-twitter-sm  {background-position: -100px -1150px; width: 20px;
+  height: 20px;  margin-top: -5px;}
+a:hover .icon-social-facebook-sm {background-position: -150px -1050px;}
+a:hover .icon-social-share {background-position: -150px -1100px;}
+a:hover .icon-social-twitter-sm  {background-position: -150px -1150px; }
+
 a:hover .icon-timeline,
 .icon-timeline:hover,
 .icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 40px; }
