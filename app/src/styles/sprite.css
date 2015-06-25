@@ -130,7 +130,7 @@ a:active .icon-snapshot,
     only screen and (min-device-pixel-ratio: 1.5) {
 
   [class^="icon-"], [class*=" icon-"] {
-    background-image: url('./img/tew-sprite@2.png');
+    background-image: url('./img/TEW-sprite@2.png');
     background-size: 300px 1650px;
   }
 }
