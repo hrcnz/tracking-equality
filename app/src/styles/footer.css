@@ -7,7 +7,7 @@ footer.hrc-footer {
 
 
 .hrc-footer-info {
-  background-color: white;
+  background-color: #E3E0D7;
 }
 
 .hrc-footer-item {
@@ -26,7 +26,7 @@ footer.hrc-footer {
 
 
 a.builtby {
-  color: #C2C0BA;
+  color: #8D825F;
   position: absolute;
   bottom: 10px;
 }

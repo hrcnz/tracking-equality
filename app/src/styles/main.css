@@ -38,7 +38,7 @@ html,body,#app {
   }
 body {
   padding: 0px;
-  background-color: #E3E0D7;
+  background-color: #fff;
   font-family: Arial, sans-serif;
 }
 .home {
@@ -72,7 +72,7 @@ p.small {
 }
 h1.hrc-title {
   font-family: 'Droid serif', serif;
-  color: white;
+  color: #fff;
   font-size: 26px;
   line-height: 34px;  
   margin-bottom: 4px;
@@ -245,7 +245,7 @@ a.list-group-item:hover,
 .btn:active:hover, 
 .btn:focus:hover, 
 .btn:hover {
-  background-color: #fff;
+  background-color: #e3e0d7;
   color: #7e7b6e;
 }
 

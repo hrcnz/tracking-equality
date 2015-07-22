@@ -99,7 +99,7 @@ td.group-label.group-label-range.group-label-range-top {
   width:80%
 }
 .chart-table > tbody > tr.table-row > td.cell-horizontal-bar-spacer {
-  border-left: 3px solid #E3E0D7;
+  border-left: 3px solid #fff;
   padding-left: 0px;
 }
 tr.table-header-groups {
@@ -180,7 +180,7 @@ td.sort-by-control ul.sort-options li:last-child{
 }
 
 .horizontal-bar-label{
-  background-color:#E3E0D7;
+  background-color:#fff;
   padding:1px;
   z-index:10;    
   font-size:14px;
