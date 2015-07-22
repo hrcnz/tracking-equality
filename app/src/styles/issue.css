@@ -55,7 +55,7 @@ li.hrc-list-item:last-child{
   color: #7F7C6F;
 }
 .indicator-preview-tile{
-  background:#EDECE7;
+  background:#E3E0D7;
   display: block;
   margin-top: 28px;
   padding:20px;
@@ -64,7 +64,7 @@ li.hrc-list-item:last-child{
 }
 
 a.indicator-preview-tile:hover {
-  background: #fff; 
+  background: #EDECE7; 
   color: #8D825F;
 }
 .group-label {
@@ -135,9 +135,7 @@ a.indicator-preview-tile:hover .date {
   background:#fff
   
 }
-.indicator-preview-tile:hover .horizontal-bar-bg {
-  background: #EDECE7;
-}       
+    
 
 .indicator-preview-tile .horizontal-bar-label {
   position:relative;
@@ -148,9 +146,7 @@ a.indicator-preview-tile:hover .date {
 .indicator-preview-tile .horizontal-bar-label.align-outside {
   background-color: #fff;
 }
-.indicator-preview-tile:hover .horizontal-bar-label.align-outside{
-  background-color: #EDECE7
-}
+
 .indicator-preview-tile .horizontal-bar-label.align-inside{
     display:block;
     position: relative;

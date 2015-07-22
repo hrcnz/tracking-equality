@@ -34,11 +34,11 @@
 li.nav-primary-li {
   text-align: center;
   padding:0;
-  border-left: 1px solid #E2DFD6;  
+  border-left: 1px solid #fff;  
   position:relative
 }
 li.nav-primary-li:last-child { 
-  border-right: 1px solid #E2DFD6;
+  border-right: 1px solid #fff;
 }
 
 li.nav-primary-li a.btn {
@@ -57,7 +57,7 @@ li.nav-primary-li a:hover:focus,
 li.nav-primary-li a:active, 
 li.nav-primary-li.active a:focus,
 li.nav-primary-li a:focus {
-  background-color: white;  
+  background-color: #E3E0D7;  
   color: #3F3E38;
 }
 
@@ -83,6 +83,6 @@ li.nav-primary-li .title {
   bottom: -11px;
   left: 50%;
   margin-left: -11px;
-  border-top-color: #fff;
+  border-top-color: #E3E0D7;
   border-bottom-width: 0;
 }
