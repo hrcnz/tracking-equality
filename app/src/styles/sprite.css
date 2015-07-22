@@ -131,6 +131,6 @@ a:active .icon-snapshot,
 
   [class^="icon-"], [class*=" icon-"] {
     background-image: url('./img/TEW-sprite@2.png');
-    background-size: 300px 1650px;
+    background-size: 400px 1650px;
   }
 }
