@@ -36,19 +36,20 @@ var router = Router.create({
   location: Router.HashLocation
 })
 
-// the google spreadhseet key
-var key = '1nmW8b_2HDgMzvuyllWCSV2hc8uUpyNrTT0WAC_7MnhE'
+// the google spreadsheet key and aws bucket (proxy)
+var key = '1_7ciuOPRBryiqiYwOoPGwzEHbdd6pfKyPdFjp_MEYf0'
+var bucket = 'tewbuffer'
 
 // initialise stores
 var stores = {
   routes: new RouteStore({ router: router }),
-  issues: new IssueStore({ key: key, sheet: 'issues', loadData: loadData }),
-  indicators: new IndicatorStore({ key: key, sheet: 'indicators', loadData: loadData  }),
-  dataBreakdowns: new DataBreakdownStore({ key: key, sheet: 'data_breakdowns', loadData: loadData  }),
-  dataGroups: new DataGroupStore({ key: key, sheet: 'data_groups', loadData: loadData  }),
-  datasets: new DatasetStore({ key: key, sheet: 'data_sets', loadData: loadData  }),
-  recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData }),
-  data: new DataStore({ key: key, sheet: 'data', loadData: loadData }),
+  issues: new IssueStore({ key: key, bucket: bucket, sheet: 'issues', loadData: loadData }),
+  indicators: new IndicatorStore({ key: key, bucket: bucket, sheet: 'indicators', loadData: loadData  }),
+  dataBreakdowns: new DataBreakdownStore({ key: key, bucket: bucket, sheet: 'data_breakdowns', loadData: loadData  }),
+  dataGroups: new DataGroupStore({ key: key, bucket: bucket, sheet: 'data_groups', loadData: loadData  }),
+  datasets: new DatasetStore({ key: key, bucket: bucket, sheet: 'data_sets', loadData: loadData  }),
+  recommendations: new RecommendationStore({ key: key, bucket: bucket, sheet: 'recommendations', loadData: loadData }),
+  data: new DataStore({ key: key, bucket: bucket, sheet: 'data', loadData: loadData }),
   charts: new ChartStore()
 }
 
