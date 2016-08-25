@@ -108,7 +108,7 @@ td.group-label.group-label-range.group-label-range-top {
   padding-left: 0px;
 }
 .chart-table>tbody>tr.table-row.spacer-gap>td.cell-horizontal-bar-spacer {
-  border-left: 3px dotted #000;
+  border-left: 1px dotted #000;
 }
 
 tr.table-header-groups {
