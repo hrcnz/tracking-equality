@@ -102,6 +102,10 @@ td.group-label.group-label-range.group-label-range-top {
   border-left: 3px solid #fff;
   padding-left: 0px;
 }
+.chart-table>tbody>tr.table-row.spacer-gap>td.cell-horizontal-bar-spacer {
+  border-left: 3px dotted #000;
+}
+
 tr.table-header-groups {
   height: 60px;
 }
