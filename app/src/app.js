@@ -38,11 +38,11 @@ var router = Router.create({
 })
 
 // the google spreadsheet key and aws bucket (proxy)
-var key = '1TigDmsj15NfHXwGvMjVBHsr86N_l023g2xpXedn3WFI' // v2 dev
+var key = '1TigDmsj15NfHXwGvMjVBHsr86N_l023g2xpXedn3WFI' // v2
 // test '1krd9Vyck1XuLIeePEe_-LTfAQYzefpneX-QE0vRWghQ' // test
 //// prod v1 '1_7ciuOPRBryiqiYwOoPGwzEHbdd6pfKyPdFjp_MEYf0'
 
-var isProxy = false
+var isProxy = true
 
 
 var bucket = 'tewbuffer'
