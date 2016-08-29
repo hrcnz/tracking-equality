@@ -25,6 +25,7 @@ var DataStore           = require('stores/data-store'),
 require("es5-shim")
 
 //logging
+var _               = require('lodash')
 var log             = require('debug')('src:app')
 
 
@@ -37,19 +38,46 @@ var router = Router.create({
 })
 
 // the google spreadsheet key and aws bucket (proxy)
-var key = '1_7ciuOPRBryiqiYwOoPGwzEHbdd6pfKyPdFjp_MEYf0'
+var key = '1TigDmsj15NfHXwGvMjVBHsr86N_l023g2xpXedn3WFI' // v2
+// test '1krd9Vyck1XuLIeePEe_-LTfAQYzefpneX-QE0vRWghQ' // test
+//// prod v1 '1_7ciuOPRBryiqiYwOoPGwzEHbdd6pfKyPdFjp_MEYf0'
+
+var isProxy = true
+
+
 var bucket = 'tewbuffer'
+
+var entityStoreConfig = {
+  key : key,
+  bucket : bucket,
+  loadData : loadData, // entity store loads its data using this function
+  isProxy : isProxy
+}
 
 // initialise stores
 var stores = {
   routes: new RouteStore({ router: router }),
-  issues: new IssueStore({ key: key, bucket: bucket, sheet: 'issues', loadData: loadData }),
-  indicators: new IndicatorStore({ key: key, bucket: bucket, sheet: 'indicators', loadData: loadData  }),
-  dataBreakdowns: new DataBreakdownStore({ key: key, bucket: bucket, sheet: 'data_breakdowns', loadData: loadData  }),
-  dataGroups: new DataGroupStore({ key: key, bucket: bucket, sheet: 'data_groups', loadData: loadData  }),
-  datasets: new DatasetStore({ key: key, bucket: bucket, sheet: 'data_sets', loadData: loadData  }),
-  recommendations: new RecommendationStore({ key: key, bucket: bucket, sheet: 'recommendations', loadData: loadData }),
-  data: new DataStore({ key: key, bucket: bucket, sheet: 'data', loadData: loadData }),
+  issues: new IssueStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'issues'
+  })),
+  indicators: new IndicatorStore(_.extend({},entityStoreConfig,{
+    sheet: 'indicators'
+  })),
+  dataBreakdowns: new DataBreakdownStore(_.extend({},entityStoreConfig,{
+    sheet: 'data_breakdowns'
+  })),
+  dataGroups: new DataGroupStore(_.extend({},entityStoreConfig,{
+    sheet: 'data_groups'
+  })),
+  datasets: new DatasetStore(_.extend({},entityStoreConfig,{
+    sheet: 'data_sets'
+  })),
+  recommendations: new RecommendationStore(_.extend({},entityStoreConfig,{
+    sheet: 'recommendations'
+  })),
+  data: new DataStore(_.extend({},entityStoreConfig,{
+    sheet: 'data'
+  })),
   charts: new ChartStore()
 }
 

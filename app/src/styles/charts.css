@@ -13,6 +13,11 @@ chart-table > thead > tr.table-header-groups > td {
   color: #595850;
   vertical-align: middle;
 }
+
+.chart-table tr.row-highlight td.group-label {
+    font-weight: bold;
+}
+
 td.breakdown-column-header {
   padding: 8px 10px 8px 0 !important;
 }
@@ -102,6 +107,10 @@ td.group-label.group-label-range.group-label-range-top {
   border-left: 3px solid #fff;
   padding-left: 0px;
 }
+.chart-table>tbody>tr.table-row.spacer-gap>td.cell-horizontal-bar-spacer {
+  border-left: 1px dotted #000;
+}
+
 tr.table-header-groups {
   height: 60px;
 }
@@ -279,4 +288,9 @@ td.chart-title {
 
 .horizontal-bar-label {
   color: #E19900;
+}
+
+
+.ref-wrapper span{
+  white-space: nowrap;
 }
