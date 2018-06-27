@@ -1,12 +1,12 @@
 /*own style overrides*/
 
-html,body,#app { 
+html,body,#app {
   position: relative;
   height: 100%;
   min-width:1024px;
 }
 .container {
-  width: 970px !important; 
+  width: 970px !important;
 }
   .navbar-header {
     float: left !important;
@@ -21,7 +21,7 @@ html,body,#app {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px !important;
-  }  
+  }
   .navbar-nav {
     float: left !important;
     margin: 0 !important;
@@ -45,7 +45,7 @@ body {
   position: relative;
   min-height: 100%;
   padding-bottom: 212px;
-  border-left: 12px solid #363636; 
+  border-left: 12px solid #363636;
 }
 .loading {
   text-align:center;
@@ -74,7 +74,7 @@ h1.hrc-title {
   font-family: 'Droid serif', serif;
   color: #fff;
   font-size: 26px;
-  line-height: 34px;  
+  line-height: 34px;
   margin-bottom: 4px;
 }
 .intro h1 {
@@ -112,7 +112,7 @@ h3 {
 .marked-inner-html h5,
 .marked-inner-html h6 {
   font-size: 16px;
-  font-weight: bold;  
+  font-weight: bold;
 }
 h4 {
   font-size: 16px;
@@ -166,10 +166,11 @@ a{
 }
 p a {
   font-weight:bold;
+  text-decoration:underline;
 }
 a:hover {
   color: #756a4a;
-  text-decoration:none
+  text-decoration:none;
 }
 a:focus{
   text-decoration:none;
@@ -190,7 +191,7 @@ a:focus {
 
 .btn:active, .btn.active {
   outline: 0;
-  background-image: none; 
+  background-image: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -208,8 +209,8 @@ a.list-group-item,
 }
 
 
-.dropdown-menu > .active > a, 
-.dropdown-menu > .active > a:hover, 
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
   color: #fff;
   text-decoration: none;
@@ -217,7 +218,7 @@ a.list-group-item,
   outline: 0;
   cursor:default;
 }
-.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #7e7b6e;
@@ -229,21 +230,21 @@ a.list-group-item:active,
 a.list-group-item.active:active,
 a.list-group-item.active:focus,
 a.list-group-item:active:focus,
-.btn.active, 
-.btn:active, 
-.btn:active:focus, 
-.btn.active:focus, 
+.btn.active,
+.btn:active,
+.btn:active:focus,
+.btn.active:focus,
 .btn.active:active{
   background-color: #7E7B6E;
   color: #fff;
 }
-a.list-group-item.active:hover, 
-a.list-group-itemactive:hover, 
-a.list-group-item:focus:hover, 
+a.list-group-item.active:hover,
+a.list-group-itemactive:hover,
+a.list-group-item:focus:hover,
 a.list-group-item:hover,
-.btn.active:hover, 
-.btn:active:hover, 
-.btn:focus:hover, 
+.btn.active:hover,
+.btn:active:hover,
+.btn:focus:hover,
 .btn:hover {
   background-color: #e3e0d7;
   color: #7e7b6e;
